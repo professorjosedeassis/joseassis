@@ -1,0 +1,489 @@
+/**
+ * professorjosedeassis.com.br
+ * @author: José de Assis
+ * @Date: 23/11/2020
+ */
+
+/********************************/
+/********** Importação **********/
+/********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+/**********************************/
+/********** Padronização **********/
+/**********************************/
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*****************************************/
+/********** Smartphone Portrait **********/
+/*****************************************/
+
+/* Cabeçalho */
+header {
+    height: 80px;
+    border-bottom: 2px solid #828282;
+    padding: 10px 0px 0px 10px;
+}
+
+#logo {
+    float: left;          
+}
+
+#logo img {
+    width: 270px; /* 75% */
+    height: 60px; /* 75% */
+}
+
+#check {
+    display: none;
+}
+
+#mobile {    
+    font-size: 3em;
+    color: rgba(52,53,56,0.5);
+    position: fixed;
+    top: 5px;
+    right: 10px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #343538;
+    position: fixed;
+	top: 80px;
+	width: 100%;		
+	height: 100vh;
+	transition: all 0.5s;	
+	right: -100%;
+}
+
+nav ul li {
+    border-bottom: 1px solid #a9a9a9;
+    padding: 20px;			
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;	
+}
+
+#check:checked ~ ul {
+    right: 0;		
+}
+
+/* Banner */
+#banner {
+    background:url(imagens/banner.jpg) center;
+    height: 50vh;
+    background-size: cover;    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#banner h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 1.750em;
+    color: #ffffff;         
+}
+
+#banner h2 {
+    display: none;
+}
+
+/* Destaque */
+#featured {
+    background:url(imagens/fundo.png) center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+#container {           
+    display: flex;     
+    flex-direction: column;
+    justify-content: center;    
+}
+
+#col1 {
+    padding: 30px 15px 15px 15px;
+}
+
+#col1 h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+#col1 p {
+    margin: 15px 0px 5px 0px;
+    color: #ffffff;
+}
+
+#col1 li {
+    margin-left: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#col2 {
+    margin: 15px;
+}
+
+#col2 img {
+    border-radius: 50%;
+}
+
+/* Redes Sociais */
+#social {
+    background:url(imagens/fundo.png) center;
+    height: 28vh;
+    background-size: cover;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#social h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    color: #ffffff;
+    margin-top: 20px;     
+}
+
+#social img {
+    width: 48px;
+    height: 48px;
+    margin: 20px 5px 0px 5px;   
+}
+
+/* Em construção */
+#construction {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+#construction h2 {
+    font-size: 2em;
+    color: #a9a9a9;
+    text-shadow: #000000 0.025em 0.025em 0.025em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343538;
+    padding: 30px 0px 30px 0px;
+    color: #ffffff;
+    text-align: center; 
+    font-size: 0.875em;
+}
+
+/******************************************/
+/********** Smartphone Landscape **********/
+/******************************************/
+
+@media (min-width: 576px) {
+    .Layout {   
+        max-width: 540px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    
+    /* Cabeçalho */
+    header {
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 15px;			
+    }
+
+     /* Banner */
+    #banner {
+        height: 100vh;
+    }
+
+    #banner h1 {
+        font-size: 1.700em;
+    }
+
+    #banner h2 {
+        display: block;
+        font-weight: 600;
+        font-size: 1em;
+        color: #ffffff; 
+        margin: 30px 50px 0px 30px; 
+    }
+
+    /* Destaque */
+    #container {         
+        flex-direction: row-reverse;           
+    }
+
+    #col1 {
+        margin-left: 30px;
+        flex: 50%;
+    }    
+
+    #col1 h2 {
+        text-align:left;
+        font-size: 1.125em;
+        margin-top: 30px;       
+    }
+    
+    #col1 p {        
+        font-size: 0.875em;       
+    }
+    
+    #col1 li {
+        font-size: 0.875em;
+        padding-bottom: 10px;       
+    }
+
+    #col2 {
+        flex: 50%;
+        margin: 28px 0px 0px 0px;
+    }
+    
+    /* Redes Sociais */
+    #social {
+        height: 45vh;
+        padding: 0;
+    }
+}
+
+/*************************************/
+/********** Tablet Portrait **********/
+/*************************************/
+
+@media (min-width: 768px) {
+    .Layout {   
+        max-width: 720px;       
+    }
+    
+    /* Banner */
+    #banner {
+        height: 40vh;
+    }
+
+    #banner h1 {
+        font-size: 2.250em;
+        font-weight: 400;
+    }
+
+    #banner h2 {
+        font-size: 1.250em;
+    }
+
+    /* Destaque */
+    #featured {
+        height: 41vh;
+    }
+
+    #col1 h2 {
+        font-size: 1.313em;              
+    }
+
+    #col1 p {
+        font-size: 1em;
+    }
+
+    #col1 li {
+        font-size: 1em;
+        padding-bottom: 15px;       
+    }    
+
+    /* Redes Sociais */
+    #social {
+        height: 17vh;
+    }
+
+    #social h2 {
+        font-size: 1.5em;
+    }
+
+    #social img {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 1em;
+    }
+}
+
+/**************************************/
+/********** Tablet Landscape **********/
+/**************************************/
+
+@media (min-width: 992px) {
+    .Layout {   
+        max-width: 960px;       
+    }    
+    
+    /* Cabeçalho */
+    header {
+        height: 100px;
+    }
+
+    #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    nav ul {
+        position: static;        
+        height: auto;
+        margin-top: 15px;
+        background-color: #ffffff;        
+    }
+    
+    nav ul li {
+        display: inline-block;
+        border: 0;       		
+    }
+
+    nav ul li a {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        color: #828282;	
+    }
+
+    nav ul li a:hover {
+        color: #000000;             
+    }
+
+    /* Banner */
+    #banner {
+        height: 70vh;
+    }
+
+    #banner h1 {
+        font-weight: 400;
+        font-size: 3em;
+    }
+
+    /* Destaque */
+    #featured {
+        height: 70vh;
+    }
+
+    #col1 li {
+        padding-bottom: 20px;       
+    }    
+
+    /* Redes Sociais */
+    #social {
+        height: 25vh;
+    }
+
+    #social h2 {
+        font-size: 1.75em;
+    }
+}
+
+/*****************************************/
+/********** Notebook ou Desktop **********/
+/*****************************************/
+
+@media (min-width: 1200px) {
+    .Layout {   
+        max-width: 1140px;
+        padding: 50px 0px 50px 0px;      
+    }
+    
+    /* Cabeçalho */
+    header {     
+        height: 150px;       
+    }
+    
+    /* Banner */
+    #banner {
+        height: 100vh;
+        border-top: 10px solid #828282;        
+    }
+
+    #banner h1 {
+        font-size: 3.250em;
+    }
+
+    /* Destaque */
+    #featured {
+        height: 95vh;
+        background-attachment: fixed;
+    }
+
+    #col1 {
+        margin-left: 100px;
+    }
+
+    #col1 h2 {
+        margin-top: 50px;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    #col1 p {
+        margin-bottom: 30px;
+    }
+
+    #col1 li {        
+        padding-bottom: 30px;
+    }
+
+    #col2 {
+        margin: 0;
+    }
+    
+    /* Em construção */
+    #construction {
+        padding: 0;
+    }
+
+    /* Redes sociais */
+    #social {
+        height: 35vh;
+        background-attachment: fixed;
+    }
+
+    #social h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 40px 0px 40px 0px;        
+    }
+}
