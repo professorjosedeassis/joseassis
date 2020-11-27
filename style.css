@@ -57,11 +57,11 @@ header {
 }
 
 #mobile {    
-    font-size: 3em;
+    font-size: 2.5em;
     color: rgba(52,53,56,0.5);
     position: fixed;
-    top: 5px;
-    right: 10px;
+    top: 20px;
+    right: 15px;
 }
 
 nav {
@@ -201,6 +201,13 @@ footer {
     color: #ffffff;
     text-align: center; 
     font-size: 0.875em;
+}
+
+/* Rolagem suave - Topo do site */
+#topSite {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 /******************************************/
