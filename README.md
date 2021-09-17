@@ -10,5 +10,13 @@
     </a>
 </p>
 
-# joseassis
-Professor José de Assis
+# Site do Professor José de Assis
+Conteúdo na áreas de Arduino, Programação e Linux.
+## Autor
+José de Assis
+## Construído com
+* HTML5
+* CSS3
+* JS
+## Licença
+Este projeto está licenciado sob a licença MIT - Consulte o arquivo LICENSE.md para detalhes.
