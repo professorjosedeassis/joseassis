@@ -3,7 +3,7 @@
  * @author Professor José de Assis
  */
 
-document.querySelector('#topSite').addEventListener('click', function (event) {
+document.querySelector('#topo').addEventListener('click', function (event) {
     event.preventDefault() //ignorar o link
     topoSite('header') //"invocar" a fução topoSite passando o elemento header(cabeçalho) como "alvo" 
 })

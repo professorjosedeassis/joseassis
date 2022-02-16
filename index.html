@@ -3,100 +3,86 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,
+   initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Cursos gratuitos e de qualidade nas áreas de Arduino, Programação e Linux.">
-  <title>Professor José de Assis</title>
-  <link rel="icon" href="imagens/favicon.png">
+  <meta name="description" content="Cursos de qualidade nas áreas de programação e Linux">
+  <title>Você faz. Você vê. Você aprende.</title>
+  <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- Cabeçalho -->
   <header>
-    <div class="Layout">
+    <div class="Container Flex">
       <div id="logo">
-        <img src="imagens/logo.png" alt="logotipo">
+        <img src="img/logo.png" alt="hal 9000">
       </div>
       <nav>
         <input type="checkbox" id="check">
-        <label for="check" id="mobile">&#9776;</label>
+        <label for="check">&#x268c;</label>
         <ul>
           <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
           <li><a href="cursos.html">Cursos</a></li>
           <li><a href="apoio.html">Apoio</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <!-- Banner -->
-  <section id="banner">
-    <div class="Layout">
-      <h1>Você faz. Você vê. Você aprende.</h1>
-      <h2>Cursos gratuitos e de qualidade nas áreas de Arduino, Programação e Linux.</h2>
-    </div>
-  </section>
+
   <!-- Destaque -->
-  <section id="featured">
-    <div class="Layout">
-      <div id="container">
-        <div id="col1">
-          <h2>Aprender na prática</h2>
-          <p>Aprenda Arduino, Programação e Linux de forma prática e divertida.</p>
-          <ul>
-            <li>Cursos baseados em projetos</li>
-            <li>Foco no mercado de trabalho</li>
-            <li>100% GRÁTIS</li>
-          </ul>
+  <main id="banner">
+    <div class="Container">
+      <h1>Você faz. Você vê. Você aprende.</h1>
+      <h2>Aqui você encontra cursos de qualidade nas áreas de Programação e Linux. </h2>
+      <a href="cursos.html" target="_blank" class="Botao">Saiba +</a>
+    </div>
+  </main>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <div class="Container Flex2">
+      <div id="destaqueSobre">
+        <img src="img/html5css3.jpg" alt="html5css3">
+      </div>
+      <div id="textoSobre">
+        <h2>Aprender na prática</h2>
+        <p>Aprenda Programação e Linux de forma prática e divertida.</p>
+        <div class="TopicosSobre Flex2">
+          <img src="img/laptop.png" alt="laptop">
+          <p>PROGRAMAÇÃO (C, Java e desenvolvimento WEB Full Stack)</p>
         </div>
-        <div id="col2">
-          <img src="imagens/arduino.jpg" alt="imagem arduino">
+        <div class="TopicosSobre Flex2">
+          <img src="img/tux.png" alt="tux">
+          <p>Linux com foco em servidores de rede</p>
+        </div>
+        <div class="TopicosSobre Flex2">
+          <img src="img/tools.png" alt="ferramentas">
+          <p>Cursos baseados em projetos</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Conteúdo principal (Cursos) -->
-  <main class="Card">
 
-  </main>
-  <!-- Robótica -->
-  <section id="robo">
-    <h2>Robótica</h2>
-  </section>
-  <!-- Projetos -->
-  <section class="Card">
-
-  </section>
-  <!-- Em construção -->
-  <div class="Layout">
-    <section id="construction">
-      <img src="imagens/aviso.png" alt="Página em construção">
-      <h2>Página em construção!</h2>
-    </section>
-  </div>
-  <!-- Redes sociais -->
-  <section id="social">
-    <div class="Layout">
-      <h2>Siga-me nas redes sociais!</h2>
-      <a href="https://www.youtube.com/user/ProfessorJosedeAssis" target="_blank"><img src="imagens/youtube.png"
-          alt="youtube"></a>
-      <a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="imagens/facebook.png"
-          alt="facebook"></a>
-      <a href="https://twitter.com/joseassis" target="_blank"><img src="imagens/twitter.png"
-          alt="twitter #joseassis"></a>
-      <a href="https://www.linkedin.com/in/professorjosedeassis/" target="_blank"><img src="imagens/linkedin.png"
-          alt="linkedin"></a>
+  <!-- Youtube -->
+  <section id="youtube">
+    <div class="Container Flex3">
+      <h2>Inscreva-se no canal do YouTube!</h2>
+      <a href="https://www.youtube.com/c/RoboticapraticaBr/?sub_confirmation=1" target="_blank" class="Botao">INSCREVER-SE</a>
     </div>
   </section>
-  <!-- Rodapé -->
+
   <footer>
-    <p>©2020 - Professor José de Assis</p>
+    <div class="Container">
+      <p>©2022 - Professor José de Assis</p>
+    </div>
   </footer>
-  <!-- Rolagem suave do site -->
-  <a href="#" id="topSite"><img src="imagens\topo.png" alt="topo do site"></a>
+  <!-- Scroll -->
+  <a href="#" id="topo"><img src="img/topo.png" alt="topo do site"></a>
   <!-- Scripts -->
-  <script src="scripts\scroll.js"></script>
+  <script src="scripts/scroll.js"></script>
 </body>
 
 </html>

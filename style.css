@@ -1,25 +1,17 @@
-/**
- * professorjosedeassis.com.br
- * @author: José de Assis
- * @Date: 23/11/2020
- */
+/*
+    Folha de estilo do site Professor josé de Assis
+    @author Professor José de Assis
+    joseassis.com.br
+*/
 
-/********************************/
-/********** Importação **********/
-/********************************/
+/* Importação (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
-
-/**********************************/
-/********** Padronização **********/
-/**********************************/
-
+/* CSS Reset */
 * {
-    padding: 0;
-    border: 0;
     margin: 0;
-    box-sizing: border-box;
+    border: 0;
+    padding: 0;
 }
 
 body {
@@ -27,470 +19,361 @@ body {
     font-size: 1em;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Layout */
+.Container {
+    margin: 0 auto;   
 }
 
-/*****************************************/
-/********** Smartphone Portrait **********/
-/*****************************************/
+.Flex {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
+
+.Flex3 {
+    display: flex;    
+    flex-direction: column;
+    text-align: center;  
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
+.Card {
+    width: 358px;
+    height: 520px;
+    background-color: #f1f3f4;
+    border: 1px solid #e8e8e8;
+    border-radius: 25px;
+    text-align: center;    
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h2 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+    padding: 10px 100px 10px 100px;
+    border: 0;
+}
+
+/* topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
 header {
-    height: 80px;
-    border-bottom: 2px solid #828282;
-    padding: 10px 0px 0px 10px;
-}
-
-#logo {
-    float: left;          
+    height: 60px;
 }
 
 #logo img {
-    width: 270px; /* 75% */
-    height: 60px; /* 75% */
+    width: 128px;
+    height: 128px;
 }
 
 #check {
     display: none;
 }
 
-#mobile {    
-    font-size: 2.5em;
-    color: rgba(52,53,56,0.5);
+label {
+    font-size: 3em;
     position: fixed;
-    top: 20px;
+    top: 5px;
     right: 15px;
-}
-
-nav {
-    float: right;
+    color: rgba(0,0,0,0.5);
 }
 
 nav ul {
     list-style: none;
     background-color: #343538;
+    height: 100vh;
     position: fixed;
-	top: 80px;
-	width: 100%;		
-	height: 100vh;
-	transition: all 0.5s;	
-	right: -100%;
-}
-
-nav ul li {
-    border-bottom: 1px solid #a9a9a9;
-    padding: 20px;			
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: #ffffff;	
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 #check:checked ~ ul {
-    right: 0;		
+    right: 0;
 }
 
-/* Banner */
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Destaque */
 #banner {
-    background:url(imagens/banner.jpg) center;
     height: 50vh;
-    background-size: cover;    
-    display: flex; 
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-#banner h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.750em;
-    color: #ffffff;         
+main h1, main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
-#banner h2 {
+main h1 {
+    font-size: 2.3em;
+    margin-bottom: 30px;
+}
+
+main h2 {
     display: none;
 }
 
-/* Destaque */
-#featured {
-    background:url(imagens/fundo.png) center;
+/* Sobre */
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background.png);
     background-size: cover;
-    height: 100vh; 
+    background-position: center;
 }
 
-#container {           
-    display: flex;     
-    flex-direction: column;
-    justify-content: center;    
+#destaqueSobre {
+    display: none;
 }
 
-#col1 {
-    padding: 30px 15px 15px 15px;
+#textoSobre {
+    color: #fff;
+    padding: 0px 10px;
 }
 
-#col1 h2 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    font-size: 1.5em;
-    color: #ffffff;
+#textoSobre h2 {
+    margin-bottom: 10px;
 }
 
-#col1 p {
-    margin: 15px 0px 5px 0px;
-    color: #ffffff;
+.TopicosSobre {
+    margin-top: 20px;
 }
 
-#col1 li {
-    margin-left: 20px;
-    color: #ffffff;
-    font-weight: 600;
+.TopicosSobre img {
+    margin-right: 10px;
 }
 
-#col2 {
-    margin: 15px;
+/* youtube */
+#youtube {
+    padding: 50px 0px;    
 }
 
-#col2 img {
-    border-radius: 50%;
+#youtube h2 {
+    color: #434343;   
 }
 
-/* Redes Sociais */
-#social {
-    background:url(imagens/fundo.png) center;
-    height: 28vh;
-    background-size: cover;
-    text-align: center;
-    padding-top: 15px;
+#youtube a {
+    border: 0;
+    border-radius: 0;
+    margin: 25px 60px 0px 60px;   
 }
 
-#social h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.25em;
-    color: #ffffff;
-    margin-top: 20px;     
-}
-
-#social img {
-    width: 48px;
-    height: 48px;
-    margin: 20px 5px 0px 5px;   
-}
 
 /* Em construção */
 #construction {
-    text-align: center;
-    padding: 30px 0px 30px 0px;
-}
-
-#construction h2 {
-    font-size: 2em;
-    color: #a9a9a9;
-    text-shadow: #000000 0.025em 0.025em 0.025em;
+    padding: 100px 0px 50px 0px;  
 }
 
 /* Rodapé */
 footer {
     background-color: #343538;
-    padding: 30px 0px 30px 0px;
-    color: #ffffff;
+    padding: 50px 0px;
+    color: #fff;
     text-align: center; 
-    font-size: 0.875em;
+    font-size: 0.875em; 
 }
 
-/* Rolagem suave - Topo do site */
-#topSite {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-}
-
-/******************************************/
-/********** Smartphone Landscape **********/
-/******************************************/
-
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    .Layout {   
+    /* Layout */
+    .Container {
         max-width: 540px;
-        margin: 0 auto;
-        padding-top: 10px;
-    }
-    
-    /* Cabeçalho */
-    header {
-        padding: 0;
     }
 
-    nav ul li {
-        padding: 15px;			
-    }
-
-     /* Banner */
+    /* Destaque */
     #banner {
         height: 100vh;
     }
-
-    #banner h1 {
-        font-size: 1.700em;
+    
+    main h1 {
+        font-size: 2em;
+        margin: 0;
     }
-
-    #banner h2 {
+    
+    main h2 {
         display: block;
-        font-weight: 600;
-        font-size: 1em;
-        color: #ffffff; 
-        margin: 30px 50px 0px 30px; 
+        font-size: 1.15em;
+        margin: 20px 0px 50px 0px;
     }
 
-    /* Destaque */
-    #container {         
-        flex-direction: row-reverse;           
-    }
-
-    #col1 {
-        margin-left: 30px;
-        flex: 50%;
-    }    
-
-    #col1 h2 {
-        text-align:left;
-        font-size: 1.125em;
-        margin-top: 30px;       
+    /* youtube */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;                    
     }
     
-    #col1 p {        
-        font-size: 0.875em;       
-    }
-    
-    #col1 li {
-        font-size: 0.875em;
-        padding-bottom: 10px;       
+    /* youtube */
+    #youtube h2 {
+        font-size: 1.15em;
     }
 
-    #col2 {
-        flex: 50%;
-        margin: 28px 0px 0px 0px;
-    }
-    
-    /* Redes Sociais */
-    #social {
-        height: 45vh;
-        padding: 0;
+    #youtube a {
+        margin: 0;       
     }
 }
 
-/*************************************/
-/********** Tablet Portrait **********/
-/*************************************/
-
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    .Layout {   
-        max-width: 720px;       
-    }
-    
-    /* Banner */
-    #banner {
-        height: 40vh;
-    }
-
-    #banner h1 {
-        font-size: 2.250em;
-        font-weight: 400;
-    }
-
-    #banner h2 {
-        font-size: 1.250em;
+    /* Layout */
+    .Container {
+        max-width: 720px;
     }
 
     /* Destaque */
-    #featured {
-        height: 41vh;
+    #banner {
+        height: 50vh;
     }
 
-    #col1 h2 {
-        font-size: 1.313em;              
+    main h1 {
+        font-size: 4em;
+        margin-bottom: 50px;
     }
 
-    #col1 p {
-        font-size: 1em;
-    }
-
-    #col1 li {
-        font-size: 1em;
-        padding-bottom: 15px;       
-    }    
-
-    /* Redes Sociais */
-    #social {
-        height: 17vh;
-    }
-
-    #social h2 {
-        font-size: 1.5em;
-    }
-
-    #social img {
-        width: 64px;
-        height: 64px;
-    }
-
-    /* Rodapé */
-    footer {
-        font-size: 1em;
-    }
-}
-
-/**************************************/
-/********** Tablet Landscape **********/
-/**************************************/
-
-@media (min-width: 992px) {
-    .Layout {   
-        max-width: 960px;       
-    }    
-    
-    /* Cabeçalho */
-    header {
-        height: 100px;
-    }
-
-    #logo img {
-        width: 100%;
-        height: 100%;
-    }
-
-    #mobile {
+    main h2 {
         display: none;
     }
 
-    nav ul {
-        position: static;        
-        height: auto;
-        margin-top: 15px;
-        background-color: #ffffff;        
-    }
-    
-    nav ul li {
-        display: inline-block;
-        border: 0;       		
-    }
-
-    nav ul li a {
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 0.875em;
-        color: #828282;	
-    }
-
-    nav ul li a:hover {
-        color: #000000;             
-    }
-
-    /* Banner */
-    #banner {
-        height: 70vh;
-    }
-
-    #banner h1 {
-        font-weight: 400;
-        font-size: 3em;
-    }
-
-    /* Destaque */
-    #featured {
-        height: 70vh;
-    }
-
-    #col1 li {
-        padding-bottom: 20px;       
-    }    
-
-    /* Redes Sociais */
-    #social {
-        height: 25vh;
-    }
-
-    #social h2 {
+    /* youtube */
+    #youtube h2 {
         font-size: 1.75em;
     }
 }
 
-/*****************************************/
-/********** Notebook ou Desktop **********/
-/*****************************************/
-
-@media (min-width: 1200px) {
-    .Layout {   
-        max-width: 1140px;
-        padding: 50px 0px 50px 0px;      
-    }
-    
-    /* Cabeçalho */
-    header {     
-        height: 150px;       
-    }
-    
-    /* Banner */
-    #banner {
-        height: 100vh;
-        border-top: 10px solid #828282;        
-    }
-
-    #banner h1 {
-        font-size: 3.250em;
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    /* Layout */
+    .Container {
+        max-width: 960px;
     }
 
     /* Destaque */
-    #featured {
-        height: 95vh;
-        background-attachment: fixed;
-    }
-
-    #col1 {
-        margin-left: 100px;
-    }
-
-    #col1 h2 {
-        margin-top: 50px;
-        font-size: 2em;
-        font-weight: 500;
-    }
-
-    #col1 p {
-        margin-bottom: 30px;
-    }
-
-    #col1 li {        
-        padding-bottom: 30px;
-    }
-
-    #col2 {
-        margin: 0;
+    #banner {
+        height: 100vh;
     }
     
-    /* Em construção */
-    #construction {
-        padding: 0;
-    }
-
-    /* Redes sociais */
-    #social {
-        height: 35vh;
-        background-attachment: fixed;
-    }
-
-    #social h2 {
-        font-size: 2em;
+    main h1 {
+        font-size: 3.5em;
         margin: 0;
     }
 
-    /* Rodapé */
-    footer {
-        padding: 40px 0px 40px 0px;        
+    main h2 {
+        display: block;
+        font-size: 1.4em;
+    }
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }
+    
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+    
+    #logo img {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: #343538;
+    }
+
+    nav ul li a:hover {
+        color: #c00000;
+    }
+
+
+    /* Destaque */
+    main h1 {
+        font-size: 4.25em;
+    }
+
+    main h2 {
+        font-size: 1.6em;
+    }
+    
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed;    
+    }
+
+    #destaqueSobre {
+        display: inline;
+        margin-right: 100px;
+    }
+
+    #destaqueSobre img {
+        border-radius: 50%;        
     }
 }
