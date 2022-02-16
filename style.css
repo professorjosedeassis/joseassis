@@ -7,6 +7,8 @@
 /* Importação (Google Fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -38,6 +40,12 @@ body {
 .Flex3 {
     display: flex;    
     flex-direction: column;
+    text-align: center;  
+}
+
+.Flex4 {
+    display: flex;    
+    flex-direction: column-reverse;
     text-align: center;  
 }
 
@@ -138,7 +146,7 @@ nav ul li a {
 
 /* Destaque */
 #banner {
-    height: 50vh;
+    height: 75vh;
     background: url(img/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -149,16 +157,22 @@ nav ul li a {
     text-align: center;
 }
 
-main h1, main h2 {
+#banner h1, #banner h2 {
     text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
-main h1 {
-    font-size: 2.3em;
-    margin-bottom: 30px;
+#banner h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    font-weight: 400;    
 }
 
-main h2 {
+#banner h2 {    
+    font-size: 1.25em;
+    margin: 20px 0px 50px 0px; 
+}
+
+#ocultar {
     display: none;
 }
 
@@ -180,11 +194,18 @@ main h2 {
 }
 
 #textoSobre h2 {
-    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+#textoSobre > p {
+    margin-bottom: 32px;
 }
 
 .TopicosSobre {
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 .TopicosSobre img {
@@ -193,16 +214,24 @@ main h2 {
 
 /* youtube */
 #youtube {
-    padding: 50px 0px;    
+    padding: 50px 0px;
+    background-color: #fff;   
 }
 
 #youtube h2 {
-    color: #434343;   
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 1.82em;    
+    color: #434343;
+}
+
+#destacado {
+    color:#f00;
 }
 
 #youtube a {
     border: 0;
-    border-radius: 0;
+    border-radius: 0;    
     margin: 25px 60px 0px 60px;   
 }
 
@@ -221,6 +250,10 @@ footer {
     font-size: 0.875em; 
 }
 
+#social {
+    margin-bottom: 25px;    
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
     /* Layout */
@@ -233,15 +266,17 @@ footer {
         height: 100vh;
     }
     
-    main h1 {
-        font-size: 2em;
+    #banner h1 {
+        font-size: 1.77em;
         margin: 0;
     }
     
-    main h2 {
-        display: block;
-        font-size: 1.15em;
-        margin: 20px 0px 50px 0px;
+    #banner h2 {    
+        font-size: 1em;         
+    }
+    
+    #ocultar {
+        display: inline;
     }
 
     /* youtube */
@@ -253,11 +288,24 @@ footer {
     
     /* youtube */
     #youtube h2 {
-        font-size: 1.15em;
+        font-size: 1.25em;
     }
 
     #youtube a {
-        margin: 0;       
+        margin: 0;
+        font-size: 1em; 
+        padding: 10px 20px;      
+    }
+
+    /* Rodapé */
+    .Flex4 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;  
+    }
+    
+    #social {
+        margin: 0;    
     }
 }
 
@@ -270,21 +318,16 @@ footer {
 
     /* Destaque */
     #banner {
-        height: 50vh;
+        height: 75vh;
     }
 
-    main h1 {
-        font-size: 4em;
-        margin-bottom: 50px;
-    }
-
-    main h2 {
-        display: none;
+    #banner h1 {
+        font-size: 2.1em;
     }
 
     /* youtube */
     #youtube h2 {
-        font-size: 1.75em;
+        font-size: 1.6em;
     }
 }
 
@@ -300,14 +343,13 @@ footer {
         height: 100vh;
     }
     
-    main h1 {
-        font-size: 3.5em;
-        margin: 0;
+    /* Destaque */
+    #banner h1 {
+        font-size: 3.1em;
     }
 
-    main h2 {
-        display: block;
-        font-size: 1.4em;
+    #banner h2 {
+        font-size: 1.5em;
     }
 }
 
@@ -337,7 +379,7 @@ footer {
         position: static;
         height: auto;
         background-color: transparent;
-        margin-top: 50px;
+        margin-top: 45px;
     }
 
     nav ul li {
@@ -353,16 +395,11 @@ footer {
         color: #c00000;
     }
 
-
-    /* Destaque */
-    main h1 {
-        font-size: 4.25em;
+    /* Banner */
+    #banner h2 {        
+        margin: 20px 0px 75px 0px; 
     }
 
-    main h2 {
-        font-size: 1.6em;
-    }
-    
     /* Sobre */
     #sobre {
         background-attachment: fixed;    
@@ -375,5 +412,5 @@ footer {
 
     #destaqueSobre img {
         border-radius: 50%;        
-    }
+    }    
 }
