@@ -5,9 +5,9 @@
 */
 
 /* Importação (Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
 /* CSS Reset */
 * {
@@ -144,7 +144,7 @@ nav ul li a {
     color: #fff;
 }
 
-/* Destaque */
+/* Banner */
 #banner {
     height: 75vh;
     background: url(img/banner.jpg);
@@ -157,23 +157,17 @@ nav ul li a {
     text-align: center;
 }
 
-#banner h1, #banner h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-}
-
 #banner h1 {
     font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
     font-size: 2em;
-    font-weight: 400;    
+       
 }
 
 #banner h2 {    
-    font-size: 1.25em;
-    margin: 20px 0px 50px 0px; 
-}
-
-#ocultar {
-    display: none;
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 15px 0px 50px 0px; 
 }
 
 /* Sobre */
@@ -195,17 +189,21 @@ nav ul li a {
 
 #textoSobre h2 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: 400;
-    font-size: 1.6em;
-    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 7px;
 }
 
 #textoSobre > p {
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 }
 
 .TopicosSobre {
-    margin-top: 2px;
+    margin-top: 5px;
+}
+
+.TopicosSobre p {
+    font-weight: 600;
 }
 
 .TopicosSobre img {
@@ -220,19 +218,20 @@ nav ul li a {
 
 #youtube h2 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: 400;
-    font-size: 1.82em;    
+    font-weight: 500;
+    font-size: 1.5em;    
     color: #434343;
 }
 
 #destacado {
     color:#f00;
+    font-weight: 600;
 }
 
 #youtube a {
     border: 0;
     border-radius: 0;    
-    margin: 25px 60px 0px 60px;   
+    margin: 40px 74px 0px 74px;   
 }
 
 
@@ -261,24 +260,17 @@ footer {
         max-width: 540px;
     }
 
-    /* Destaque */
-    #banner {
-        height: 100vh;
-    }
-    
+    /* Banner */
     #banner h1 {
-        font-size: 1.77em;
+        font-size: 1.75em;
+        font-weight: 400;
         margin: 0;
     }
-    
-    #banner h2 {    
-        font-size: 1em;         
-    }
-    
-    #ocultar {
-        display: inline;
-    }
 
+    #banner h2 {    
+        font-size: 1em;
+    }
+    
     /* youtube */
     .Flex3 {
         flex-direction: row;
@@ -286,7 +278,6 @@ footer {
         justify-content: space-between;                    
     }
     
-    /* youtube */
     #youtube h2 {
         font-size: 1.25em;
     }
@@ -316,18 +307,9 @@ footer {
         max-width: 720px;
     }
 
-    /* Destaque */
-    #banner {
-        height: 75vh;
-    }
-
-    #banner h1 {
-        font-size: 2.1em;
-    }
-
     /* youtube */
     #youtube h2 {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 }
 
@@ -336,21 +318,7 @@ footer {
     /* Layout */
     .Container {
         max-width: 960px;
-    }
-
-    /* Destaque */
-    #banner {
-        height: 100vh;
-    }
-    
-    /* Destaque */
-    #banner h1 {
-        font-size: 3.1em;
-    }
-
-    #banner h2 {
-        font-size: 1.5em;
-    }
+    }    
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -396,8 +364,17 @@ footer {
     }
 
     /* Banner */
-    #banner h2 {        
-        margin: 20px 0px 75px 0px; 
+    #banner{
+        height: 70vh;
+    }
+
+    #banner h1 {
+        font-size: 2.75em;       
+    }
+
+    #banner h2 {    
+        font-size: 1.3em;
+        font-weight: 600;
     }
 
     /* Sobre */
