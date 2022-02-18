@@ -271,8 +271,8 @@ footer {
 /***** Página sobre *****/
 .Banner2 h1 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 2em;
+    font-weight: 700;
+    font-size: 2.5em;
 }
 
 #imgProf img {
@@ -350,10 +350,6 @@ footer {
     }
 
     /***** Página sobre *****/
-    .Banner2 h1 {
-        font-size: 2.4em;
-    }
-
     #imgProf img {
         width: 180px;
         height: 180px;
