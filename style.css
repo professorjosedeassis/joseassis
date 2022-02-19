@@ -2,6 +2,7 @@
     Folha de estilo do site Professor josé de Assis
     @author Professor José de Assis
     joseassis.com.br
+    professorjosedeassis.com.br
 */
 
 /* Importação (Google Fonts) */
@@ -31,47 +32,56 @@ body {
     margin: 0 auto;    
 }
 
-.Flex {
+.Flex, .Flex2, .Flex3, .Flex4, .Flex5 {
     display: flex;
+}
+
+.Flex {
     justify-content: space-between;   
 }
 
 .Flex2 {
-    display: flex;
     align-items: center;
 }
 
 
 .Flex3 {
-    display: flex;    
     flex-direction: column;
     text-align: center;  
 }
 
 .Flex4 {
-    display: flex;    
     flex-direction: column-reverse;
     text-align: center;  
 }
 
-.Botao {
+.Flex5 {    
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+
+.Botao, .Botao2, .Botao3 {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
     font-weight: 700;
+}
+
+.Botao {
     background-color: #c00000;
     padding: 10px 40px;
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .Botao2 {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 700;
     background-color: #828282;
     padding: 10px 31px;
-    margin-left: 12px;
+    margin-left: 10px;
+}
+
+.Botao3 {
+    background-color: #343538;
+    padding: 10px 40px;    
 }
 
 .Banner2 {
@@ -87,9 +97,10 @@ body {
 }
 
 .Card {
+    margin-top: 30px;
     width: 338px;
     height: 520px;
-    background-color: #f1f3f4;
+    background-color: #f1f1f1;
     border: 1px solid #e8e8e8;
     border-radius: 25px;
     text-align: center;    
@@ -99,7 +110,7 @@ body {
     border-radius: 25px 25px 0px 0px;
 }
 
-.Card h2 {
+.Card h3 {
     margin: 15px 30px 0px 30px;
 }
 
@@ -114,6 +125,18 @@ body {
     border: 0;
     border-radius: 25px;
     margin: 0;
+}
+
+.Todos {
+    text-align: center;    
+    margin-top: 50px;   
+}
+
+.Todos a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.25em;
 }
 
 /* topo do site */
@@ -237,10 +260,6 @@ nav ul li a {
 }
 
 /* youtube */
-#youtube {
-    background-color: #fff;   
-}
-
 #youtube h2 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 500;
@@ -256,6 +275,36 @@ nav ul li a {
 #youtube a {
    margin: 40px 60px 0px 60px;   
 }
+
+/* Cursos */
+#cursos {
+    background-color: #828282;
+}
+
+#cursos h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    color: #fff;    
+}
+
+#cursos a {
+    color: #fff;
+}
+
+/* Projetos */
+#projetos h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;    
+}
+
+#projeto {
+    font-weight: 700;
+}
+
 /* Rodapé */
 footer {
     background-color: #343538;
@@ -386,6 +435,11 @@ footer {
     #youtube h2 {
         font-size: 1.5em;
     }
+
+    /* cursos e Projetos */
+    #cursos h2, #projetos h2 {
+        font-size: 1.85em;
+    }
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -397,8 +451,8 @@ footer {
     
     /***** Página sobre *****/
     #imgProf img {
-        width: 340px;
-        height: 340px;              
+        width: 288px;
+        height: 288px;              
     }
     
     #textoProf {
@@ -487,5 +541,18 @@ footer {
 
     #destaqueIntro img {
         border-radius: 50%;        
-    }    
+    }
+    
+    /* Cursos */
+    #cursos {        
+        background: url(img/background.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;    
+    }
+
+    /* cursos e projetos */
+    #cursos h2, #projetos h2 {
+        font-size: 2.5em;
+    }
 }
