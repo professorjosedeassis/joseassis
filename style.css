@@ -260,20 +260,25 @@ nav ul li a {
 }
 
 /* youtube */
+#youtube {
+    background: url(img/banner2.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
 #youtube h2 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     font-size: 1.5em;    
-    color: #434343;
+    color: #fff;
 }
 
 #destacado {
-    color:#f00;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-#youtube a {
-   margin: 40px 60px 0px 60px;   
+#youtube a {    
+   margin: 40px 60px 0px 60px;     
 }
 
 /* Cursos */
@@ -294,6 +299,10 @@ nav ul li a {
 }
 
 /* Projetos */
+#projetos {
+    background-color: #b4c2bd;
+}
+
 #projetos h2 {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
