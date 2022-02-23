@@ -12,8 +12,10 @@ Professor José de Assis
 ## Licença
 Este projeto está licenciado sob a licença MIT - Consulte o arquivo LICENSE.md para detalhes.
 ## Quer aprender a desenvolver este site?
-[![HTML5 e CSS3 - One Page Site](https://img.youtube.com/vi/bS720dGvAn8/0.jpg)](https://youtu.be/bS720dGvAn8 "Apresentação do projeto")
+Saiba +
+
+[![HTML5 e CSS3 - One Page Site](https://img.youtube.com/vi/bS720dGvAn8/0.jpg)](https://youtu.be/bS720dGvAn8 "Assistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/bS720dGvAn8?style=social)
-## Playlist
+## Playlist do projeto:
 [HTML5 e CSS3 - One page site](https://www.youtube.com/playlist?list=PLbEOwbQR9lqySIIlPJ-Qwo4f4HSuXVeWk)
