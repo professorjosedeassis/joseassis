@@ -9,8 +9,6 @@ Professor José de Assis
 * HTML5
 * CSS3
 * JS
-## Licença
-Este projeto está licenciado sob a licença MIT - Consulte o arquivo LICENSE.md para detalhes.
 ## Quer aprender a desenvolver este site?
 Saiba +
 
@@ -19,3 +17,5 @@ Saiba +
 ![YouTube Video Views](https://img.shields.io/youtube/views/bS720dGvAn8?style=social)
 ## Playlist do projeto:
 [Iniciar projeto](https://www.youtube.com/playlist?list=PLbEOwbQR9lqySIIlPJ-Qwo4f4HSuXVeWk)
+## Licença
+Este projeto está licenciado sob a licença MIT - Consulte o arquivo LICENSE.md para detalhes.
