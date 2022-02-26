@@ -360,6 +360,63 @@ footer {
     font-size: 0.8em;
 }
 
+/***** Página apoio *****/
+#apoio h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+
+#apoio h3 {
+    font-weight: 500;
+    margin-top: 25px;
+    font-size: 1.1em;
+}
+
+#apoio h4 {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#apoio form {
+    margin: 8px 0px 10px 0px;
+}
+
+#apoio img {
+    margin: 12px 0px 10px 0px;
+}
+
+/***** Páginas de conteúdo *****/
+#conteudo h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.Video iframe {
+    margin-top: 15px;
+    width: 340px;
+    height: 191px; 
+    border: 0;   
+}
+
+#conteudo h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;    
+    font-size: 1.25em;
+    margin: 25px 0px 10px 0px;    
+}
+
+#conteudo img {
+    width: 125px;
+    height: 106px;
+}
+
+#conteudo a {
+    text-decoration: none;    
+}
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
@@ -429,6 +486,12 @@ footer {
     
     #autor {
         font-size: 0.75em;
+    }
+
+    /***** Páginas de conteúdo *****/
+    .Video iframe {
+        width: 560px;
+        height: 315px;   
     }
 
 }
