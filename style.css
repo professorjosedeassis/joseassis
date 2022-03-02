@@ -6,625 +6,634 @@
 */
 
 /* Importação (Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
 
 /* CSS Reset */
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
 }
 
 /* Layout */
 .Container {
-    margin: 0 auto;
-    padding: 50px 10px;  
+  margin: 0 auto;
+  padding: 50px 10px;
 }
 
 .ContainerEx {
-    margin: 0 auto;    
+  margin: 0 auto;
 }
 
-.Flex, .Flex2, .Flex3, .Flex4, .Flex5 {
-    display: flex;
+.Flex,
+.Flex2,
+.Flex3,
+.Flex4,
+.Flex5 {
+  display: flex;
 }
 
 .Flex {
-    justify-content: space-between;   
+  justify-content: space-between;
 }
 
 .Flex2 {
-    align-items: center;
+  align-items: center;
 }
 
-
 .Flex3 {
-    flex-direction: column;
-    text-align: center;  
+  flex-direction: column;
+  text-align: center;
 }
 
 .Flex4 {
-    flex-direction: column-reverse;
-    text-align: center;  
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
-.Flex5 {    
-    flex-wrap: wrap;
-    justify-content: space-evenly;  
+.Flex5 {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.Botao, .Botao2, .Botao3 {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 700;
+.Botao,
+.Botao2,
+.Botao3 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 .Botao {
-    background-color: #c00000;
-    padding: 10px 40px;
-    margin-right: 10px;
+  background-color: #c00000;
+  padding: 10px 40px;
+  margin-right: 10px;
 }
 
 .Botao2 {
-    background-color: #828282;
-    padding: 10px 31px;
-    margin-left: 10px;
+  background-color: #828282;
+  padding: 10px 31px;
+  margin-left: 10px;
 }
 
 .Botao3 {
-    background-color: #343538;
-    padding: 10px 40px;    
+  background-color: #343538;
+  padding: 10px 40px;
 }
 
 .Banner2 {
-    height: 200px;
-    background: url(img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  height: 200px;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .Card {
-    margin-top: 30px;
-    width: 338px;
-    height: 520px;
-    background-color: #f1f1f1;
-    border: 1px solid #e8e8e8;
-    border-radius: 25px;
-    text-align: center;    
+  margin-top: 30px;
+  width: 338px;
+  height: 520px;
+  background-color: #f1f1f1;
+  border: 1px solid #e8e8e8;
+  border-radius: 25px;
+  text-align: center;
 }
 
 .Card img {
-    border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .Card h3 {
-    margin: 15px 30px 0px 30px;
+  margin: 15px 30px 0px 30px;
 }
 
 .Card p {
-    text-align: left;
-    color: #434343;
-    padding: 10px 30px 50px 30px;
+  text-align: left;
+  color: #434343;
+  padding: 10px 30px 50px 30px;
 }
 
 .Card a {
-    padding: 10px 100px 10px 100px;
-    border: 0;
-    border-radius: 25px;
-    margin: 0;
+  padding: 10px 100px 10px 100px;
+  border: 0;
+  border-radius: 25px;
+  margin: 0;
 }
 
 .Todos {
-    text-align: center;    
-    margin-top: 50px;   
+  text-align: center;
+  margin-top: 50px;
 }
 
 .Todos a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-size: 1.25em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 /* topo do site */
 #topo {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
 header {
-    height: 60px;
+  height: 60px;
 }
 
-#logo img {    
-    width: 128px;
-    height: 128px;
+#logo img {
+  width: 128px;
+  height: 128px;
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
 label {
-    font-size: 3em;
-    position: fixed;
-    top: 5px;
-    right: 15px;
-    color: rgba(0,0,0,0.5);
+  font-size: 3em;
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-    list-style: none;
-    background-color: #343538;
-    height: 100vh;
-    position: fixed;
-    top: 60px;
-    right: -100%;
-    width: 100%;
-    transition: all 0.5s;
+  list-style: none;
+  background-color: #343538;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  width: 100%;
+  transition: all 0.5s;
 }
 
 #check:checked ~ ul {
-    right: 0;
+  right: 0;
 }
 
 nav ul li {
-    padding: 17px 20px;
-    border-bottom: 1px solid #a9a9a9;
+  padding: 17px 20px;
+  border-bottom: 1px solid #a9a9a9;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Banner */
 #banner {
-    height: 75vh;
-    background: url(img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  height: 75vh;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 #banner h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 2em;
-       
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
 }
 
-#banner h2 {    
-    font-size: 1.15em;
-    font-weight: 700;
-    margin: 15px 0px 50px 0px; 
+#banner h2 {
+  font-size: 1.15em;
+  font-weight: 700;
+  margin: 15px 0px 50px 0px;
 }
 
 /* Introdução */
 #intro {
-    background: url(img/background.png);
-    background-size: cover;
-    background-position: center;
+  background: url(img/background.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #destaqueIntro {
-    display: none;
+  display: none;
 }
 
 #textoIntro {
-    color: #fff;    
+  color: #fff;
 }
 
 #textoIntro h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
-    margin-bottom: 7px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 7px;
 }
 
 #textoIntro > p {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .TopicosIntro {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .TopicosIntro p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .TopicosIntro img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* youtube */
 #youtube {
-    background: url(img/banner2.jpg);
-    background-size: cover;
-    background-position: center;    
+  background: url(img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #youtube h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;    
-    color: #fff;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #fff;
 }
 
 #destacado {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-#youtube a {    
-   margin: 40px 60px 0px 60px;     
+#youtube a {
+  margin: 40px 60px 0px 60px;
 }
 
 /* Cursos */
 #cursos {
-    background-color: #828282;
+  background-color: #828282;
 }
 
 #cursos h2 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 400;
-    font-size: 1.4em;
-    color: #fff;    
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #fff;
 }
 
 #cursos a {
-    color: #fff;
+  color: #fff;
 }
 
 /* Projetos */
 #projetos {
-    background-color: #b4c2bd;
+  background-color: #b4c2bd;
 }
 
 #projetos h2 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 400;
-    font-size: 1.4em;    
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
 }
 
 #projeto {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* Rodapé */
 footer {
-    background-color: #343538;
-    color: #fff;
-    text-align: center; 
-    font-size: 0.875em; 
+  background-color: #343538;
+  color: #fff;
+  text-align: center;
+  font-size: 0.875em;
 }
 
 #social {
-    margin-bottom: 25px;    
+  margin-bottom: 25px;
 }
 
 /***** Página sobre *****/
 .Banner2 h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 2.5em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
 }
 
 #imgProf img {
-    width: 256px;
-    height: 256px;
-    margin-bottom: 40px;
-    border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  margin-bottom: 40px;
+  border-radius: 50%;
 }
 
 #textoProf h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
-    text-align: left;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: left;
 }
 
 #textoProf p {
-    text-align: left;
-    margin-top: 15px;
+  text-align: left;
+  margin-top: 15px;
 }
 
 #frase {
-    font-style: italic;
+  font-style: italic;
 }
 
 #autor {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 /***** Página apoio *****/
 #apoio h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
-    margin-bottom: 7px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 7px;
 }
 
 #apoio h3 {
-    font-weight: 500;
-    margin-top: 25px;
-    font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 25px;
+  font-size: 1.1em;
 }
 
 #apoio h4 {
-    font-weight: 600;
-    margin-top: 15px;
+  font-weight: 600;
+  margin-top: 15px;
 }
 
 #apoio form {
-    margin: 8px 0px 10px 0px;
+  margin: 8px 0px 10px 0px;
 }
 
 #apoio img {
-    margin: 12px 0px 10px 0px;
+  margin: 12px 0px 10px 0px;
 }
 
 /***** Páginas de conteúdo *****/
 #conteudo h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    font-size: 1.5em;
-    margin-bottom: 8px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 8px;
 }
 
 .Video iframe {
-    margin-top: 15px;
-    width: 340px;
-    height: 191px; 
-    border: 0;   
+  margin-top: 15px;
+  width: 340px;
+  height: 191px;
+  border: 0;
 }
 
 #conteudo h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;    
-    font-size: 1.25em;
-    margin: 25px 0px 10px 0px;    
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  margin: 25px 0px 10px 0px;
 }
 
 #conteudo img {
-    width: 125px;
-    height: 106px;
+  width: 125px;
+  height: 106px;
 }
 
 #conteudo a {
-    text-decoration: none;    
+  text-decoration: none;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    /* Layout */
-    .Container, .ContainerEx {
-        max-width: 540px;
-    }
+  /* Layout */
+  .Container,
+  .ContainerEx {
+    max-width: 540px;
+  }
 
-    /* Banner */
-    #banner h1 {
-        font-size: 1.75em;
-        font-weight: 400;
-        margin: 0;
-    }
+  /* Banner */
+  #banner h1 {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin: 0;
+  }
 
-    #banner h2 {    
-        font-size: 1em;
-    }
-    
-    /* youtube */
-    .Flex3 {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;                    
-    }
-    
-    #youtube h2 {
-        font-size: 1.25em;
-    }
+  #banner h2 {
+    font-size: 1em;
+  }
 
-    #youtube a {
-        margin: 0;
-        font-size: 1em; 
-        padding: 10px 20px;      
-    }
+  /* youtube */
+  .Flex3 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    /* Rodapé */
-    .Flex4 {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;  
-    }
-    
-    #social {
-        margin: 0;    
-    }
+  #youtube h2 {
+    font-size: 1.25em;
+  }
 
-    /***** Página sobre *****/
-    #imgProf img {
-        width: 180px;
-        height: 180px;
-        margin: 0;        
-    }
-    
-    #textoProf {
-        margin-left: 25px;
-    }
+  #youtube a {
+    margin: 0;
+    font-size: 1em;
+    padding: 10px 20px;
+  }
 
-    #textoProf h2 {        
-        font-size: 1.25em;       
-    }
-    
-    #textoProf p {       
-        margin-top: 6px;
-        font-size: 0.85em;   
-    }   
-    
-    #autor {
-        font-size: 0.75em;
-    }
+  /* Rodapé */
+  .Flex4 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    /***** Páginas de conteúdo *****/
-    .Video iframe {
-        width: 560px;
-        height: 315px;   
-    }
+  #social {
+    margin: 0;
+  }
 
+  /***** Página sobre *****/
+  #imgProf img {
+    width: 180px;
+    height: 180px;
+    margin: 0;
+  }
+
+  #textoProf {
+    margin-left: 25px;
+  }
+
+  #textoProf h2 {
+    font-size: 1.25em;
+  }
+
+  #textoProf p {
+    margin-top: 6px;
+    font-size: 0.85em;
+  }
+
+  #autor {
+    font-size: 0.75em;
+  }
+
+  /***** Páginas de conteúdo *****/
+  .Video iframe {
+    width: 560px;
+    height: 315px;
+  }
 }
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    /* Layout */
-    .Container, .ContainerEx {
-        max-width: 720px;
-    }
+  /* Layout */
+  .Container,
+  .ContainerEx {
+    max-width: 720px;
+  }
 
-    /* youtube */
-    #youtube h2 {
-        font-size: 1.5em;
-    }
+  /* youtube */
+  #youtube h2 {
+    font-size: 1.5em;
+  }
 
-    /* cursos e Projetos */
-    #cursos h2, #projetos h2 {
-        font-size: 1.85em;
-    }
+  /* cursos e Projetos */
+  #cursos h2,
+  #projetos h2 {
+    font-size: 1.85em;
+  }
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    /* Layout */
-    .Container, .ContainerEx {
-        max-width: 960px;
-    }
-    
-    /***** Página sobre *****/
-    #imgProf img {
-        width: 288px;
-        height: 288px;              
-    }
-    
-    #textoProf {
-        margin-left: 50px;
-    }
+  /* Layout */
+  .Container,
+  .ContainerEx {
+    max-width: 960px;
+  }
 
-    #textoProf h2 {        
-        font-size: 1.5em;       
-    }
-    
-    #textoProf p {       
-        margin-top: 15px;
-        font-size: 1em;   
-    }   
-    
-    #autor {
-        font-size: 0.8em;       
-    }
+  /***** Página sobre *****/
+  #imgProf img {
+    width: 288px;
+    height: 288px;
+  }
+
+  #textoProf {
+    margin-left: 50px;
+  }
+
+  #textoProf h2 {
+    font-size: 1.5em;
+  }
+
+  #textoProf p {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+
+  #autor {
+    font-size: 0.8em;
+  }
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    /* Layout */
-    .Container, .ContainerEx {
-        max-width: 1140px;
-    }
-    
-    /* Cabeçalho */
-    header {
-        height: 120px;
-    }
-    
-    #logo img {
-        width: 189px;
-        height: 189px;
-        margin-top: 30px;
-    }
+  /* Layout */
+  .Container,
+  .ContainerEx {
+    max-width: 1140px;
+  }
 
-    label {
-        display: none;
-    }
+  /* Cabeçalho */
+  header {
+    height: 120px;
+  }
 
-    nav ul {
-        position: static;
-        height: auto;
-        background-color: transparent;
-        margin-top: 40px;        
-    }
+  #logo img {
+    width: 189px;
+    height: 189px;
+    margin-top: 30px;
+  }
 
-    nav ul li {
-        float: left;
-        border: 0;
-    }
+  label {
+    display: none;
+  }
 
-    nav ul li a {
-        color: #343538;
-    }
+  nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 40px;
+  }
 
-    nav ul li a:hover {
-        color: #c00000;
-    }
+  nav ul li {
+    float: left;
+    border: 0;
+  }
 
-    /* Banner */
-    #banner{
-        height: 70vh;
-    }
+  nav ul li a {
+    color: #343538;
+  }
 
-    #banner h1 {
-        font-size: 2.75em;       
-    }
+  nav ul li a:hover {
+    color: #c00000;
+  }
 
-    #banner h2 {    
-        font-size: 1.3em;
-        font-weight: 600;
-    }
+  /* Banner */
+  #banner {
+    height: 70vh;
+  }
 
-    /* Introdução */
-    #intro {
-        background-attachment: fixed;    
-    }
+  #banner h1 {
+    font-size: 2.75em;
+  }
 
-    #destaqueIntro {
-        display: inline;
-        margin-right: 100px;
-    }
+  #banner h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
 
-    #destaqueIntro img {
-        border-radius: 50%;        
-    }
-    
-    /* Cursos */
-    #cursos {        
-        background: url(img/background.png);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;    
-    }
+  /* Introdução */
+  #intro {
+    background-attachment: fixed;
+  }
 
-    /* cursos e projetos */
-    #cursos h2, #projetos h2 {
-        font-size: 2.5em;
-    }
+  #destaqueIntro {
+    display: inline;
+    margin-right: 100px;
+  }
+
+  #destaqueIntro img {
+    border-radius: 50%;
+  }
+
+  /* Cursos */
+  #cursos {
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* cursos e projetos */
+  #cursos h2,
+  #projetos h2 {
+    font-size: 2.5em;
+  }
 }
