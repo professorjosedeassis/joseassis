@@ -20,6 +20,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  background-color: #dee1e6;
 }
 
 /* Layout */
@@ -105,8 +106,8 @@ body {
   margin-top: 30px;
   width: 338px;
   height: 520px;
-  background-color: #f1f1f1;
-  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  border: 1px solid #a1a1a1;
   border-radius: 25px;
   text-align: center;
 }
@@ -303,10 +304,6 @@ nav ul li a {
 }
 
 /* Projetos */
-#projetos {
-  background-color: #b4c2bd;
-}
-
 #projetos h2 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
@@ -588,7 +585,7 @@ footer {
   }
 
   nav ul li a {
-    color: #343538;
+    color: #000;
   }
 
   nav ul li a:hover {
