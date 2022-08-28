@@ -79,7 +79,8 @@ body {
 }
 
 .Botao2 {
-  background-color: #828282;
+  background-color: #fff;
+  color: #c00000;
   padding: 10px 31px;
   margin-left: 10px;
 }
