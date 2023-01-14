@@ -8,7 +8,6 @@ Professor José de Assis
 ### Construído "na unha" com:
 * HTML5
 * CSS3
-* JS
 ## Quer aprender a desenvolver este site? (Saiba +)
 [![HTML5 e CSS3 - One Page Site](https://img.youtube.com/vi/bS720dGvAn8/0.jpg)](https://youtu.be/bS720dGvAn8 "Assistir no YouTube")
 
