@@ -207,7 +207,7 @@ nav ul li a {
 
 /* Banner */
 #banner {
-  height: 75vh;
+  height: 60vh;
   background: url(img/banner.jpg);
   background-size: cover;
   background-position: center;
@@ -367,7 +367,7 @@ footer {
 
 /***** Página apoio *****/
 #apoio h2 {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
   margin-bottom: 7px;
@@ -602,7 +602,7 @@ footer {
 
   /* Banner */
   #banner {
-    height: 65vh;
+    height: 60vh;
   }
 
   #banner h1 {
