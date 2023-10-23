@@ -191,7 +191,7 @@ nav ul {
   transition: all 0.5s;
 }
 
-#check:checked ~ ul {
+#check:checked~ul {
   right: 0;
 }
 
@@ -252,7 +252,7 @@ nav ul li a {
   margin-bottom: 7px;
 }
 
-#textoIntro > p {
+#textoIntro>p {
   margin-bottom: 25px;
 }
 
@@ -394,7 +394,7 @@ footer {
 
 /***** Páginas de conteúdo *****/
 #conteudo h2 {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5em;
   margin-bottom: 8px;
@@ -408,7 +408,7 @@ footer {
 }
 
 #conteudo h3 {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1.25em;
   margin: 25px 0px 10px 0px;
@@ -425,6 +425,7 @@ footer {
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
+
   /* Layout */
   .Container,
   .ContainerEx {
@@ -503,6 +504,7 @@ footer {
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
+
   /* Layout */
   .Container,
   .ContainerEx {
@@ -523,6 +525,7 @@ footer {
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
+
   /* Layout */
   .Container,
   .ContainerEx {
@@ -555,6 +558,7 @@ footer {
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
+
   /* Layout */
   .Container,
   .ContainerEx {
