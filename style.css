@@ -270,7 +270,7 @@ nav ul li a {
 
 /* youtube */
 #youtube {
-  background: url(img/banner2.jpg);
+  background-color: #c00000;
   background-size: cover;
   background-position: center;
 }
@@ -598,7 +598,7 @@ footer {
 
   /* Banner */
   #banner {
-    height: 70vh;
+    height: 65vh;
   }
 
   #banner h1 {
