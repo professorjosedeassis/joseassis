@@ -137,6 +137,12 @@ body {
   margin: 0;
 }
 
+.pix {
+  background-color: #fff;
+  padding: 1px 3px;
+  font-weight: 600;
+}
+
 .Todos {
   text-align: center;
   margin-top: 50px;
@@ -318,6 +324,7 @@ nav ul li a {
 
 #projeto {
   font-weight: 700;
+  color: #c00000;
 }
 
 /* Rodapé */

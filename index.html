@@ -24,9 +24,10 @@
         <label for="check">&#x268c;</label>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="cursos.html">Tutoriais</a></li>
+          <li><a href="sobre.html">Sobre</a></li>          
+          <li><a href="cursos.html">Cursos</a></li>          
           <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="tutoriais.html">Tutoriais</a></li>
           <li><a href="apoio.html">Apoio</a></li>
         </ul>
       </nav>
@@ -38,7 +39,7 @@
     <div class="ContainerEx">
       <h1>Você faz. Você vê. Você aprende.</h1>
       <h2>Um site dedicado ao ensino de Programação e Linux.</h2>
-      <a href="cursos.html" class="Botao">Tutoriais</a>
+      <a href="cursos.html" class="Botao">Cursos</a>
       <a href="projetos.html" class="Botao2">Projetos</a>
     </div>
   </main>
@@ -52,7 +53,7 @@
       <div id="textoIntro">
         <h2>Aprender na prática</h2>
         <p>
-          Aqui você encontra projetos, tutoriais e conteúdo de qualidade nas áreas de Programação e Linux.
+          Aqui você encontra cursos, projetos e conteúdo de qualidade nas áreas de Programação e Linux.
         </p>
         <div class="TopicosIntro Flex2">
           <img src="img/laptop.png" alt="laptop">
@@ -60,12 +61,16 @@
         </div>
         <div class="TopicosIntro Flex2">
           <img src="img/tux.png" alt="tux">
-          <p>Linux com foco em servidores</p>
+          <p>Linux com foco em Servidores</p>
+        </div>
+        <div class="TopicosIntro Flex2">
+          <img src="img/certificado.png" alt="certificado">
+          <p>Cursos GRÁTIS ( com certificado )</p>
         </div>
         <div class="TopicosIntro Flex2">
           <img src="img/tools.png" alt="ferramentas">
           <p>Tutoriais e Projetos</p>
-        </div>
+        </div>        
       </div>
     </div>
   </section>
@@ -82,33 +87,34 @@
   <!-- Cursos -->
   <section id="cursos">
     <div class="Container">
-      <h2>Tutoriais</h2>
+      <h2>Cursos</h2>
       <div class="Cards Flex5">
         <div class="Card">
-          <img src="img/html5css3.png" alt="html5 css3">
-          <h3>HTML5 - CSS3 - SEO</h3>
+          <img src="img/java-ee.png" alt="java" />
+          <h3>Programação Java para WEB</h3>
           <p>
-            Aprenda HTML5, CSS3 e técnicas de SEO desenvolvendo passo a passo do "zero" até a hospedagem um site
-            semelhante a este.</p>
-          <a href="cursos/html5css3.html" class="Botao">Saiba +</a>
+            Este curso é ideal para quem quer dar os primeiros passos no desenvolvimento WEB back-end ou full stack
+            usando a Linguagem Java.
+          </p>
+          <a href="curso/java-ee.html" class="Botao">Saiba +</a>
         </div>
         <div class="Card">
-          <img src="img/java.png" alt="java">
-          <h3>Java para iniciantes</h3>
+          <img src="img/linguagemc.png" alt="linguagem c" />
+          <h3>Programação - Linguagem C</h3>
           <p>
-            Aprenda Java de forma prática e divertida. Este tutorial cria uma base sólida a todos que desejam iniciar no
-            mundo Java.
+            Aprenda C de forma simples e descontraída. Este curso também ensina lógica de programação, sendo recomendado
+            a iniciantes.
           </p>
-          <a href="cursos/java.html" class="Botao">Saiba +</a>
+          <a href="curso/linguagem-c.html" class="Botao">Saiba +</a>
         </div>
         <div class="Card">
           <img src="img/linux.png" alt="curso de linux" />
           <h3>Linux Server</h3>
           <p>
-            Tutorial recomendado aos alunos e profissionais de TI que desejam iniciar em Linux com foco no mercado
-            corporativo e certficação.
+            Curso recomendado aos alunos e profissionais de TI que desejam iniciar em Linux com foco no mercado
+            corporativo e certificação.
           </p>
-          <a href="cursos/linux.html" class="Botao">Saiba +</a>
+          <a href="curso/linux.html" class="Botao">Saiba +</a>
         </div>
       </div>
       <div class="Todos">
@@ -125,35 +131,74 @@
       </h2>
       <div class="Cards Flex5">
         <div class="Card">
+          <img src="img/sistemaos.png" alt="sistema java mysql" />
+          <h3>Sistema OS</h3>
+          <p>
+            Neste projeto você irá desenvolver passo a passo do zero um
+            sistema para gestão de serviços usando o Java e o banco de dados
+            MySQL.
+          </p>
+          <a href="projeto/javamysql.html" class="Botao3">Saiba +</a>
+        </div>
+        <div class="Card">
           <img src="img/carometro.png" alt="java mysql">
-          <h3>Java MySQL - Carômetro</h3>
+          <h3>Carômetro</h3>
           <p>
             Carômetro é um aplicativo para desktop (Windows, Linux ou MAC) de repositório de informações de pessoas com
             uma foto associada.
           </p>
-          <a href="projetos/carometro.html" class="Botao3">Saiba +</a>
+          <a href="projeto/carometro.html" class="Botao3">Saiba +</a>
         </div>
         <div class="Card">
-          <img src="img/sistemaos.png" alt="sistema java mysql">
-          <h3>Java MySQL - Sistema OS</h3>
+          <img src="img/javacep.png" alt="projeto java cep" />
+          <h3>Busca automática de CEP</h3>
           <p>
-            Neste projeto você irá desenvolver passo a passo do zero um
-            sistema para gestão de serviços usando o Java e o banco de dados MySQL.
+            Mini projeto que ensina a fazer a busca automática de um CEP podendo ser usado para agilizar o processo de
+            cadastros em sistemas.
           </p>
-          <a href="projetos/javamysql.html" class="Botao3">Saiba +</a>
+          <a href="projeto/javacep.html" class="Botao3">Saiba +</a>
+        </div>
+      </div>
+      <div class="Todos">
+        <a href="projetos.html">Conheça todos >></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tutoriais -->
+  <section id="cursos">
+    <div class="Container">
+      <h2>Tutoriais</h2>
+      <div class="Cards Flex5">
+        <div class="Card">
+          <img src="img/html5css3.png" alt="html5 css3" />
+          <h3>Site One Page</h3>
+          <p>
+            Desenvolva passo a passo do "zero" até a hospedagem um site one page moderno e responsivo usando apenas
+            HTML5 e CSS3.</p>
+          <a href="tutorial/html5css3.html" class="Botao">Saiba +</a>
+        </div>
+        <div class="Card">
+          <img src="img/mysql.png" alt="mysql linux" />
+          <h3>Linux MySQL Server</h3>
+          <p>
+            Este tutorial ensina a implementar um servidor de banco de dados MySQL baseado no Linux dedicado a sistemas
+            comerciais em redes locais.
+          </p>
+          <a href="tutorial/mysql.html" class="Botao">Saiba +</a>
         </div>
         <div class="Card">
           <img src="img/tomcat.png" alt="linux tomcat" />
           <h3>Linux Tomcat Server</h3>
           <p>
-            Neste projeto você irá aprender a implementar de forma simples e
-            prática um servidor WEB Java com Tomcat no Linux.
+            Este tutorial ensina a implementar de forma simples e prática um servidor WEB de aplicativos Java usando
+            Tomcat no Linux.
           </p>
-          <a href="projetos/tomcat.html" class="Botao3">Saiba +</a>
+          <a href="tutorial/tomcat.html" class="Botao">Saiba +</a>
         </div>
       </div>
       <div class="Todos">
-        <a href="projetos.html">Conheça todos >></a>
+        <a href="tutoriais.html">Conheça todos >></a>
       </div>
     </div>
   </section>
