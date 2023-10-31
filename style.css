@@ -298,11 +298,11 @@ nav ul li a {
 }
 
 /* Cursos */
-#cursos {
+.Cursos {
   background-color: #4d4d4d;
 }
 
-#cursos h2 {
+.Cursos h2 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
@@ -310,7 +310,7 @@ nav ul li a {
   color: #fff;
 }
 
-#cursos a {
+.Cursos a {
   color: #fff;
 }
 
@@ -427,6 +427,10 @@ footer {
   height: 106px;
 }
 
+#conteudo ul li {
+  margin-left: 20px;
+}
+
 #conteudo a {
   text-decoration: none;
 }
@@ -525,7 +529,7 @@ footer {
   }
 
   /* cursos e Projetos */
-  #cursos h2,
+  .Cursos h2,
   #projetos h2 {
     font-size: 1.85em;
   }
@@ -637,7 +641,7 @@ footer {
   }
 
   /* Cursos */
-  #cursos {
+  .Cursos {
     background: url(img/background.png);
     background-size: cover;
     background-position: center;
@@ -645,7 +649,7 @@ footer {
   }
 
   /* cursos e projetos */
-  #cursos h2,
+  .Cursos h2,
   #projetos h2 {
     font-size: 2.5em;
   }
