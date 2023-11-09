@@ -298,6 +298,14 @@ nav ul li a {
 }
 
 /* Cursos */
+#cursos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;  
+  font-size: 1.8em;
+}
+
 .Cursos {
   background-color: #4d4d4d;
 }
@@ -319,7 +327,8 @@ nav ul li a {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.8em;  
+  margin-bottom: 20px; 
 }
 
 #projeto {
@@ -530,7 +539,7 @@ footer {
 
   /* cursos e Projetos */
   .Cursos h2,
-  #projetos h2 {
+  #projetos h2, #cursos h2 {
     font-size: 1.85em;
   }
 }
@@ -650,7 +659,7 @@ footer {
 
   /* cursos e projetos */
   .Cursos h2,
-  #projetos h2 {
+  #projetos h2, #cursos h2 {
     font-size: 2.5em;
   }
 }
