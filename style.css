@@ -29,7 +29,7 @@ body {
 /* Layout */
 .Container {
   margin: 0 auto;
-  padding: 50px 10px;
+  padding: 50px 15px;
 }
 
 .ContainerEx {
@@ -303,7 +303,7 @@ nav ul li a {
   margin-bottom: 20px;
   font-family: "Orbitron", sans-serif;
   font-weight: 400;  
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .Cursos {
@@ -314,7 +314,7 @@ nav ul li a {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.7em;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -328,7 +328,7 @@ nav ul li a {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
-  font-size: 1.8em;  
+  font-size: 1.7em;  
   margin-bottom: 20px; 
 }
 
