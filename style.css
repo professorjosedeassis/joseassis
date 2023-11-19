@@ -1,8 +1,6 @@
 /*
     Folha de estilo do site Professor josé de Assis
-    @author Professor José de Assis
-    joseassis.com.br
-    professorjosedeassis.com.br
+    @author Professor José de Assis    
 */
 
 /* Importação (Google Fonts) */
@@ -74,23 +72,24 @@ body {
   color: #fff;
   font-size: 1.2em;
   font-weight: 700;
+  border-radius: 25px;
 }
 
 .Botao {
   background-color: #c00000;
   padding: 10px 40px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .Botao2 {
   background-color: #fff;
   color: #c00000;
   padding: 10px 31px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .Botao3 {
-  background-color: #343538;
+  background-color: #27282b;
   padding: 10px 40px;
 }
 
@@ -133,7 +132,6 @@ body {
 .Card a {
   padding: 10px 100px 10px 100px;
   border: 0;
-  border-radius: 25px;
   margin: 0;
 }
 
@@ -150,7 +148,7 @@ body {
 
 .Todos a {
   text-decoration: none;
-  color: #000;
+  color: #1f1f1f;
   font-weight: 600;
   font-size: 1.25em;
 }
@@ -188,12 +186,12 @@ label {
 
 nav ul {
   list-style: none;
-  background-color: #343538;
+  background-color: rgba(31, 31, 31, 0.95);
   height: 100vh;
   position: fixed;
   top: 60px;
-  right: -100%;
-  width: 100%;
+  right: -65%;
+  width: 65%;
   transition: all 0.5s;
 }
 
@@ -204,6 +202,7 @@ nav ul {
 nav ul li {
   padding: 17px 20px;
   border-bottom: 1px solid #a9a9a9;
+  text-align: right;
 }
 
 nav ul li a {
@@ -277,8 +276,6 @@ nav ul li a {
 /* youtube */
 #youtube {
   background-color: #c00000;
-  background-size: cover;
-  background-position: center;
 }
 
 #youtube h2 {
@@ -293,8 +290,8 @@ nav ul li a {
   font-size: 1.2em;
 }
 
-#youtube a {
-  margin: 40px 60px 0px 60px;
+#youtube img {
+  margin-top: 20px;
 }
 
 /* Cursos */
@@ -302,20 +299,20 @@ nav ul li a {
   text-align: center;
   margin-bottom: 20px;
   font-family: "Orbitron", sans-serif;
-  font-weight: 400;  
+  font-weight: 400;
   font-size: 1.7em;
 }
 
 .Cursos {
-  background-color: #4d4d4d;
+  background-color: #fff;
 }
 
 .Cursos h2 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
-  font-weight: 400;
-  font-size: 1.7em;
-  color: #fff;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #1f1f1f;
   margin-bottom: 20px;
 }
 
@@ -324,12 +321,16 @@ nav ul li a {
 }
 
 /* Projetos */
+#projetos {
+  background-color: #f1f1f1;
+}
+
 #projetos h2 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
-  font-size: 1.7em;  
-  margin-bottom: 20px; 
+  font-size: 1.7em;
+  margin-bottom: 20px;
 }
 
 #projeto {
@@ -337,9 +338,14 @@ nav ul li a {
   color: #c00000;
 }
 
+.Todos a {
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
 /* Rodapé */
 footer {
-  background-color: #343538;
+  background-color: #1f1f1f;
   color: #fff;
   text-align: center;
   font-size: 0.875em;
@@ -472,14 +478,8 @@ footer {
     justify-content: space-between;
   }
 
-  #youtube h2 {
-    font-size: 1.25em;
-  }
-
-  #youtube a {
+  #youtube img {
     margin: 0;
-    font-size: 1em;
-    padding: 10px 20px;
   }
 
   /* Rodapé */
@@ -535,12 +535,13 @@ footer {
 
   /* youtube */
   #youtube h2 {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
 
   /* cursos e Projetos */
   .Cursos h2,
-  #projetos h2, #cursos h2 {
+  #projetos h2,
+  #cursos h2 {
     font-size: 1.85em;
   }
 }
@@ -603,6 +604,7 @@ footer {
   }
 
   nav ul {
+    width: 100%;
     position: static;
     height: auto;
     background-color: transparent;
@@ -624,7 +626,7 @@ footer {
 
   /* Banner */
   #banner {
-    height: 60vh;
+    height: 50vh;
   }
 
   #banner h1 {
@@ -650,6 +652,15 @@ footer {
     border-radius: 50%;
   }
 
+  /* youtube */
+  #youtube h2 {
+    margin-left: 100px;
+  }
+
+  #youtube img {
+    margin-right: 100px;
+  }
+
   /* Cursos */
   .Cursos {
     background: url(img/background.png);
@@ -659,8 +670,25 @@ footer {
   }
 
   /* cursos e projetos */
-  .Cursos h2,
-  #projetos h2, #cursos h2 {
+  #projetos {
+    background-color: #fff;
+  }
+
+  .Cursos h2 {
+    color: #fff;
     font-size: 2.5em;
+  }
+
+  #projetos h2,
+  #cursos h2 {
+    font-size: 2.5em;
+  }
+
+  .Todos a {
+    color: #fff;
+  }
+
+  #corTodos {
+    color: #c00000;
   }
 }
