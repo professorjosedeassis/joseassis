@@ -67,7 +67,8 @@ body {
 
 .Botao,
 .Botao2,
-.Botao3 {
+.Botao3,
+.Botao4 {
   text-decoration: none;
   color: #fff;
   font-size: 1.2em;
@@ -89,13 +90,21 @@ body {
 }
 
 .Botao3 {
-  background-color: #27282b;
+  background-color: #3c3c3c;
   padding: 10px 40px;
 }
 
+.Botao4 {
+  background-color: #fff;
+  color: #3c3c3c;
+  padding: 8px 30px;
+  border: 2px solid #3c3c3c;
+  margin-left: 10px;
+}
+
 .Banner2 {
-  height: 200px;
-  background: url(img/banner.jpg);
+  height: 35vh;
+  background: url(img/bannerhal.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -103,6 +112,13 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.Banner2 h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-size: 2.75em;
+  text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
 .Card {
@@ -213,7 +229,7 @@ nav ul li a {
 /* Banner */
 #banner {
   height: 60vh;
-  background: url(img/banner.jpg);
+  background: url(img/bannersm.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -225,14 +241,19 @@ nav ul li a {
 
 #banner h1 {
   font-family: "Orbitron", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2em;
+  text-shadow: 0px 5px 10px #434343,
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 #banner h2 {
   font-size: 1.15em;
   font-weight: 700;
   margin: 15px 0px 50px 0px;
+  color: #434343;
 }
 
 /* Introdução */
@@ -345,7 +366,7 @@ nav ul li a {
 
 /* Rodapé */
 footer {
-  background-color: #1f1f1f;
+  background-color: #3c3c3c;
   color: #fff;
   text-align: center;
   font-size: 0.875em;
@@ -356,12 +377,6 @@ footer {
 }
 
 /***** Página sobre *****/
-.Banner2 h1 {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 700;
-  font-size: 2.5em;
-}
-
 #imgProf img {
   width: 256px;
   height: 256px;
@@ -461,14 +476,19 @@ footer {
   }
 
   /* Banner */
+  #banner {
+    height: 75vh;
+    background: url(img/banner.jpg);    
+    background-size: cover;
+  }
+
   #banner h1 {
-    font-size: 1.75em;
-    font-weight: 400;
+    font-size: 1.75em;    
     margin: 0;
   }
 
   #banner h2 {
-    font-size: 1em;
+    font-size: 1em;    
   }
 
   /* youtube */
@@ -533,6 +553,20 @@ footer {
     max-width: 720px;
   }
 
+  /* Banner */
+  #banner {
+    height: 45vh;
+  }
+
+  #banner h1 {
+    font-size: 2.2em;
+  }
+
+  #banner h2 {
+    font-size: 1.4em;
+    font-weight: 400;  
+  }
+
   /* youtube */
   #youtube h2 {
     font-size: 1.9em;
@@ -590,13 +624,13 @@ footer {
 
   /* Cabeçalho */
   header {
-    height: 120px;
+    height: 135px;
   }
 
   #logo img {
-    width: 189px;
-    height: 189px;
-    margin-top: 30px;
+    width: 256px;
+    height: 256px;
+    margin-top: 10px;
   }
 
   label {
@@ -626,16 +660,15 @@ footer {
 
   /* Banner */
   #banner {
-    height: 50vh;
+    height: 60vh;
   }
 
   #banner h1 {
-    font-size: 2.75em;
+    font-size: 3.25em;
   }
 
   #banner h2 {
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.75em;    
   }
 
   /* Introdução */
