@@ -185,7 +185,7 @@ header {
 
 #logo img {
   width: 128px;
-  height: 128px;
+  height: 128px; 
 }
 
 #check {
@@ -229,7 +229,7 @@ nav ul li a {
 /* Banner */
 #banner {
   height: 60vh;
-  background: url(img/bannersm.jpg);
+  background: url(img/banner10.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -251,7 +251,7 @@ nav ul li a {
 
 #banner h2 {
   font-size: 1.15em;
-  font-weight: 700;
+  font-weight: 400;  
   margin: 15px 0px 50px 0px;
   color: #434343;
 }
@@ -477,8 +477,7 @@ footer {
 
   /* Banner */
   #banner {
-    height: 75vh;
-    background: url(img/banner.jpg);    
+    height: 75vh;    
     background-size: cover;
   }
 
@@ -563,8 +562,7 @@ footer {
   }
 
   #banner h2 {
-    font-size: 1.4em;
-    font-weight: 400;  
+    font-size: 1.4em;    
   }
 
   /* youtube */
@@ -668,7 +666,7 @@ footer {
   }
 
   #banner h2 {
-    font-size: 1.75em;    
+    font-size: 1.8em;    
   }
 
   /* Introdução */
