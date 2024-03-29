@@ -18,26 +18,26 @@
   <meta name="description" content="Tutoriais de Linux, Linguagem C, Java, JavaScript e desenvolvimento WEB full stack">
   <title>Tutoriais baseados em projetos - Programação e Linux</title>
   <link rel="icon" href="img/favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="tuto">
   <!-- Cabeçalho -->
   <header>
     <div class="ContainerEx Flex">
       <div id="logo">
-        <img src="img/logo.png" alt="hal 9000">
+        <img src="img/tutorial.png" alt="youtube tv">
       </div>      
       <nav>
         <input type="checkbox" id="check">
         <label for="check">&#x268c;</label>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="tutoriais.html">Tutoriais</a></li>
-          <li><a href="apoio.html">Apoio</a></li>
+          <li><a href="index.html" id="m1">Home</a></li>
+          <li><a href="sobre.html" id="m2">Sobre</a></li>
+          <li><a href="cursos.html" id="m3">Cursos</a></li>
+          <li><a href="projetos.html" id="m4">Projetos</a></li>
+          <li><a href="tutoriais.html" id="m5">Tutoriais</a></li>
+          <li><a href="apoio.html" id="m6">Apoio</a></li>
         </ul>
       </nav>
     </div>
@@ -118,7 +118,7 @@
   <footer>
     <div class="Container Flex4">
       <div id="copyright">
-        <p>©2023 - Professor José de Assis</p>
+        <p>©<span id="copyrightYear"></span> - Professor José de Assis</p>
       </div>
       <div id="social">
         <a href="https://www.youtube.com/c/RoboticapraticaBr" target="_blank"><img src="img/youtube.png"
@@ -137,6 +137,7 @@
   <!-- Topo -->
   <a href="#" id="topo"><img src="img/topo.png" alt="topo do site"></a>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

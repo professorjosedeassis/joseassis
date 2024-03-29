@@ -18,26 +18,28 @@
   <meta name="description" content="Olá! Eu sou o professor José de Assis">
   <title>Olá! Eu sou o professor José de Assis</title>
   <link rel="icon" href="img/favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="sobre">
   <!-- Cabeçalho -->
   <header>
     <div class="ContainerEx Flex">
       <div>
-        
-      </div>     
+        <div id="logo">
+          <img src="img/professor.png" alt="professor jose de assis">
+        </div>
+      </div>
       <nav>
         <input type="checkbox" id="check">
         <label for="check">&#x268c;</label>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="cursos.html">Cursos</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="tutoriais.html">Tutoriais</a></li>
-          <li><a href="apoio.html">Apoio</a></li>
+          <li><a href="index.html" id="m1">Home</a></li>
+          <li><a href="sobre.html" id="m2">Sobre</a></li>
+          <li><a href="cursos.html" id="m3">Cursos</a></li>
+          <li><a href="projetos.html" id="m4">Projetos</a></li>
+          <li><a href="tutoriais.html" id="m5">Tutoriais</a></li>
+          <li><a href="apoio.html" id="m6">Apoio</a></li>
         </ul>
       </nav>
     </div>
@@ -52,16 +54,16 @@
 
   <!-- Conteúdo Sobre -->
   <section id="professor">
-    <div class="Container Flex3">
-      <div id="imgProf">
-        <img src="img/professor.png" alt="Professor José de Assis">
-      </div>
+    <div class="Container">
       <div id="textoProf">
         <h2>Olá!</h2>
         <p>Eu sou o professor José de Assis.</p>
-        <p>Boas-vindas, aqui você encontra cursos gratuitos, projetos e conteúdo de qualidade para turbinar o seu currículo e criar o seu portfólio.</p>
-        <p>Sou formado em eletrônica e gestão de TI, pós-graduado em Robótica Educacional e certificado em Linux LPIC-1. Atuo como professor em cursos de Tecnologia da Informação, Robótica Educacional e Arduino.</p>
-        <p><span id=frase>"A vida é como andar de bicicleta. Para ter equilíbrio, você tem que se manter em movimento..."</span></p>
+        <p>Boas-vindas, aqui você encontra cursos gratuitos, projetos e conteúdo de qualidade para turbinar o seu
+          currículo e criar o seu portfólio.</p>
+        <p>Sou formado em eletrônica e gestão de sistemas de TI, pós-graduado em Robótica Educacional e certificado em Linux LPIC-1.
+          Atuo como professor em cursos de Tecnologia da Informação, Robótica Educacional e Arduino.</p>
+        <p><span id=frase>"A vida é como andar de bicicleta. Para ter equilíbrio, você tem que se manter em
+            movimento..."</span></p>
         <p><span id="autor">(Albert Einstein)</span></p>
       </div>
     </div>
@@ -71,7 +73,7 @@
   <footer>
     <div class="Container Flex4">
       <div id="copyright">
-        <p>©2023 - Professor José de Assis</p>
+        <p>©<span id="copyrightYear"></span> - Professor José de Assis</p>
       </div>
       <div id="social">
         <a href="https://www.youtube.com/c/RoboticapraticaBr" target="_blank"><img src="img/youtube.png"
@@ -90,6 +92,7 @@
   <!-- Topo -->
   <a href="#" id="topo"><img src="img/topo.png" alt="topo do site"></a>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

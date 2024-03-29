@@ -4,9 +4,22 @@
 */
 
 /* Importação (Google Fonts) */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap");
+
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+:root {
+  --branco: #fff;
+  --cinza: #535b57;
+  --cinzaClarinho: #e5e5e5;
+  --cinzaClaro: #a1a1a1;
+  --cinzaMedio: #4d4d4d;
+  --cinzaEscuro: #3c3c3c;
+  --gelo: #f1f3f4;
+  --preto: #000;
+  --vermelho: #cc280f;
+}
 
 /* CSS Reset */
 * {
@@ -15,28 +28,28 @@
   padding: 0;
 }
 
+/* Scroll suave */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estrutura do site */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
 
-/* Layout */
-.Container {
-  margin: 0 auto;
-  padding: 50px 15px;
-}
-
+.Container,
 .ContainerEx {
   margin: 0 auto;
 }
 
+.Container {
+  padding: 50px 15px;
+}
+
 .Flex,
 .Flex2,
-.Flex3,
 .Flex4,
 .Flex5 {
   display: flex;
@@ -50,11 +63,6 @@ body {
   align-items: center;
 }
 
-.Flex3 {
-  flex-direction: column;
-  text-align: center;
-}
-
 .Flex4 {
   flex-direction: column-reverse;
   text-align: center;
@@ -65,62 +73,7 @@ body {
   justify-content: space-evenly;
 }
 
-.Botao,
-.Botao2,
-.Botao3,
-.Botao4 {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 700;
-  border-radius: 25px;
-}
-
-.Botao {
-  background-color: #c00000;
-  padding: 10px 40px;
-  margin-right: 5px;
-}
-
-.Botao2 {
-  background-color: #fff;
-  color: #c00000;
-  padding: 10px 31px;
-  margin-left: 5px;
-}
-
-.Botao3 {
-  background-color: #3c3c3c;
-  padding: 10px 40px;
-}
-
-.Botao4 {
-  background-color: #fff;
-  color: #3c3c3c;
-  padding: 8px 30px;
-  border: 2px solid #3c3c3c;
-  margin-left: 10px;
-}
-
-.Banner2 {
-  height: 35vh;
-  background: url(img/bannerhal.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.Banner2 h1 {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 600;
-  font-size: 2.75em;
-  text-shadow: #000 0.05em 0.05em 0.05em;
-}
-
+/* Cartões */
 .Card {
   margin-top: 30px;
   width: 338px;
@@ -151,12 +104,49 @@ body {
   margin: 0;
 }
 
-.pix {
-  background-color: #fff;
-  padding: 1px 3px;
+/* Botões */
+.Botao,
+.Botao2,
+.Botao3,
+.Botao4,
+.Botao5 {
+  text-decoration: none;
+  font-size: 1.2em;
   font-weight: 600;
+  border-radius: 25px;
 }
 
+.Botao,
+.Botao3 {
+  color: var(--branco);
+  padding: 10px 40px;
+}
+
+.Botao {
+  background-color: var(--vermelho);
+  margin-right: 5px;
+}
+
+.Botao2 {
+  background-color: var(--gelo);
+  color: var(--cinzaEscuro);
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.Botao3 {
+  background-color: var(--cinzaEscuro);
+}
+
+.Botao4 {
+  background-color: var(--branco);
+  color: var(--cinzaEscuro);
+  padding: 8px 30px;
+  border: 2px solid var(--cinzaEscuro);
+  margin-left: 10px;
+}
+
+/* Seções */
 .Todos {
   text-align: center;
   margin-top: 50px;
@@ -164,19 +154,41 @@ body {
 
 .Todos a {
   text-decoration: none;
-  color: #1f1f1f;
-  font-weight: 600;
+  color: var(--cinzaEscuro);  
   font-size: 1.25em;
 }
 
-/* topo do site */
+/* Topo do site */
 #topo {
   position: fixed;
   right: 10px;
   bottom: 10px;
 }
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Banner de páginas */
+.Banner2 {
+  height: 35vh;
+  background: url(../img/bannerhal.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Banner2 h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-size: 2.75em;
+  text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
+/* LAYOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Smartphone portrait >>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
 header {
@@ -185,7 +197,7 @@ header {
 
 #logo img {
   width: 128px;
-  height: 128px; 
+  height: 128px;
 }
 
 #check {
@@ -217,22 +229,22 @@ nav ul {
 
 nav ul li {
   padding: 17px 20px;
-  border-bottom: 1px solid #a9a9a9;
+  border-bottom: 1px solid var(--cinzaClaro);
   text-align: right;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--branco);
 }
 
 /* Banner */
 #banner {
   height: 60vh;
-  background: url(img/banner10.jpg);
+  background: url(../img/banner10.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--branco);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,22 +255,22 @@ nav ul li a {
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
   font-size: 2em;
-  text-shadow: 0px 5px 10px #434343,
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 5px 10px var(--cinzaMedio),
+    0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1),
+    0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 #banner h2 {
   font-size: 1.15em;
-  font-weight: 400;  
+  font-weight: 400;
   margin: 15px 0px 50px 0px;
-  color: #434343;
+  color: var(--cinzaEscuro);
 }
 
 /* Introdução */
 #intro {
-  background: url(img/background.png);
+  background: url(../img/background.png);
   background-size: cover;
   background-position: center;
 }
@@ -268,7 +280,7 @@ nav ul li a {
 }
 
 #textoIntro {
-  color: #fff;
+  color: var(--branco);
 }
 
 #textoIntro h2 {
@@ -294,25 +306,44 @@ nav ul li a {
   margin-right: 10px;
 }
 
-/* youtube */
+/* YouTube */
 #youtube {
-  background-color: #c00000;
+  background: url(../img/bannerhal.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--branco)
 }
 
-#youtube h2 {
+#imagemYoutube {
+  display: none;
+}
+
+#textoYoutube h2 {
   font-family: "Orbitron", sans-serif;
+  text-shadow: #000 0.05em 0.05em 0.05em;
   font-weight: 500;
-  font-size: 1.5em;
-  color: #fff;
+  font-size: 1.4em;
+  margin-bottom: 10px;
 }
 
-#destacado {
+#textoYoutube p {
+  margin-bottom: 35px;
+  text-shadow: 0px 5px 10px var(--cinza),
+    0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1),
+    0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Destacado {
   font-weight: 700;
-  font-size: 1.2em;
+  text-shadow: #000 0.05em 0.05em 0.05em;
 }
 
-#youtube img {
-  margin-top: 20px;
+#youtube .Botao4 {
+  padding: 10px 20px;
+  background-color: var(--gelo);
+  color: var(--cinzaEscuro);
+  font-size: 1em;
 }
 
 /* Cursos */
@@ -320,53 +351,52 @@ nav ul li a {
   text-align: center;
   margin-bottom: 20px;
   font-family: "Orbitron", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.7em;
 }
 
 .Cursos {
-  background-color: #fff;
+  background-color: var(--branco);
 }
 
 .Cursos h2 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.5em;
-  color: #1f1f1f;
   margin-bottom: 20px;
 }
 
 .Cursos a {
-  color: #fff;
+  color: var(--branco);
 }
 
 /* Projetos */
 #projetos {
-  background-color: #f1f1f1;
+  background-color: var(--cinzaClarinho);
 }
 
 #projetos h2 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
-  font-weight: 400;
-  font-size: 1.7em;
+  font-weight: 500;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
 #projeto {
-  font-weight: 700;
-  color: #c00000;
+  font-weight: 600;
+  color: var(--vermelho);
 }
 
 .Todos a {
-  color: #1f1f1f;
-  font-weight: 700;
+  color: var(--cinzaEscuro);
+  font-weight: 600;
 }
 
 /* Rodapé */
 footer {
-  background-color: #3c3c3c;
+  background-color: var(--cinzaEscuro);
   color: #fff;
   text-align: center;
   font-size: 0.875em;
@@ -376,14 +406,7 @@ footer {
   margin-bottom: 25px;
 }
 
-/***** Página sobre *****/
-#imgProf img {
-  width: 256px;
-  height: 256px;
-  margin-bottom: 40px;
-  border-radius: 50%;
-}
-
+/*** Página sobre ***/
 #textoProf h2 {
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
@@ -404,7 +427,7 @@ footer {
   font-size: 0.8em;
 }
 
-/***** Página apoio *****/
+/*** Página apoio ***/
 #apoio h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -431,7 +454,23 @@ footer {
   margin: 12px 0px 10px 0px;
 }
 
-/***** Páginas de conteúdo *****/
+.pix {
+  background-color: var(--branco);
+  padding: 1px 3px;
+  font-weight: 600;
+}
+
+#pix {
+  font-weight: 600;
+  font-size: 1.1em;
+  background-color: var(--gelo);
+  width: 238px;
+  padding: 1px 10px;
+  border: 1px solid var(--cinzaClaro);
+  margin-top: 5px;
+}
+
+/*** Páginas de conteúdo ***/
 #conteudo h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -466,7 +505,10 @@ footer {
   text-decoration: none;
 }
 
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Smartphone portrait <<<<<<<<<<<<<<<<< */
+
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
   /* Layout */
@@ -477,28 +519,17 @@ footer {
 
   /* Banner */
   #banner {
-    height: 75vh;    
+    height: 75vh;
     background-size: cover;
   }
 
   #banner h1 {
-    font-size: 1.75em;    
+    font-size: 1.75em;
     margin: 0;
   }
 
   #banner h2 {
-    font-size: 1em;    
-  }
-
-  /* youtube */
-  .Flex3 {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  #youtube img {
-    margin: 0;
+    font-size: 1em;
   }
 
   /* Rodapé */
@@ -512,13 +543,7 @@ footer {
     margin: 0;
   }
 
-  /***** Página sobre *****/
-  #imgProf img {
-    width: 180px;
-    height: 180px;
-    margin: 0;
-  }
-
+  /*** Página sobre ***/
   #textoProf {
     margin-left: 25px;
   }
@@ -536,14 +561,17 @@ footer {
     font-size: 0.75em;
   }
 
-  /***** Páginas de conteúdo *****/
+  /*** Páginas de conteúdo ***/
   .Video iframe {
     width: 560px;
     height: 315px;
   }
 }
 
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Smartphone landscape <<<<<<<<<<<<<<<< */
+
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
 
   /* Layout */
@@ -562,15 +590,10 @@ footer {
   }
 
   #banner h2 {
-    font-size: 1.4em;    
+    font-size: 1.4em;
   }
 
-  /* youtube */
-  #youtube h2 {
-    font-size: 1.9em;
-  }
-
-  /* cursos e Projetos */
+  /* seções */
   .Cursos h2,
   #projetos h2,
   #cursos h2 {
@@ -578,7 +601,10 @@ footer {
   }
 }
 
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Tablet portrait <<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
 
   /* Layout */
@@ -587,12 +613,22 @@ footer {
     max-width: 960px;
   }
 
-  /***** Página sobre *****/
-  #imgProf img {
-    width: 288px;
-    height: 288px;
+  /* Youtube */
+  #textoYoutube p {
+    margin-right: 60px;
+    text-shadow: none;
   }
 
+  #imagemYoutube {
+    display: inline;
+  }
+
+  #imagemYoutube img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /*** Página sobre ***/
   #textoProf {
     margin-left: 50px;
   }
@@ -611,7 +647,10 @@ footer {
   }
 }
 
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Tablet landscape <<<<<<<<<<<<<<<<<<<< */
+
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
   /* Layout */
@@ -626,8 +665,8 @@ footer {
   }
 
   #logo img {
-    width: 256px;
-    height: 256px;
+    width: 242px;
+    height: 242px;
     margin-top: 10px;
   }
 
@@ -652,8 +691,18 @@ footer {
     color: #343538;
   }
 
+  /* Destacar link ativo do menu */
+  #index #m1,
+  #sobre #m2,
+  #curso #m3,
+  #project #m4,
+  #tuto #m5,
+  #cafezinho #m6 {      
+      color: var(--vermelho);
+  }
+
   nav ul li a:hover {
-    color: #c00000;
+    color: var(--vermelho);
   }
 
   /* Banner */
@@ -666,7 +715,7 @@ footer {
   }
 
   #banner h2 {
-    font-size: 1.8em;    
+    font-size: 1.8em;
   }
 
   /* Introdução */
@@ -683,43 +732,27 @@ footer {
     border-radius: 50%;
   }
 
-  /* youtube */
-  #youtube h2 {
+  /* Youtube */
+  #textoYoutube h2 {
+    font-size: 2em;
+  }
+
+  #textoYoutube p {
+    font-size: 1.25em;
+    margin-bottom: 50px;
+  }
+
+  #imagemYoutube img {
     margin-left: 100px;
   }
 
-  #youtube img {
-    margin-right: 100px;
-  }
-
-  /* Cursos */
-  .Cursos {
-    background: url(img/background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  /* cursos e projetos */
-  #projetos {
-    background-color: #fff;
-  }
-
-  .Cursos h2 {
-    color: #fff;
+  /* Seções */
+  .Cursos h2 {    
     font-size: 2.5em;
   }
 
   #projetos h2,
   #cursos h2 {
     font-size: 2.5em;
-  }
-
-  .Todos a {
-    color: #fff;
-  }
-
-  #corTodos {
-    color: #c00000;
-  }
+  }  
 }
