@@ -2,7 +2,7 @@
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fjoseassis.com.br%2F)
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/joseassis)
 # LinkHUB - Professor José de Assis
-Este repositório hospeda a landing page dos sites, redes sociais e repositórios do Professor José de Assis
+Este repositório hospeda a landing page dos sites, redes sociais e repositório de projetos do Professor José de Assis
 ### Autor
 Professor José de Assis
 
