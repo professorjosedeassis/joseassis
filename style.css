@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #aaa;
+}
+
+.link-tree {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-tree a {
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.link-tree a:hover {
+    background-color: #3d3d3d;
+    transform: scale(1.03);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #555;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

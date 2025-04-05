@@ -1,250 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDXZ3H5ZVR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-TDXZ3H5ZVR');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,
-   initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description"
-    content="Turbine seu currículo e crie o seu portfólio com cursos gratuitos, projetos e tutoriais de programação e linux.">
-  <title>Você faz. Você vê. Você aprende.</title>
-  <link rel="icon" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkHub - Professor José de Assis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body>
+  <div class="container">
+    <!-- Imagem de Perfil -->
+    <img src="perfil.jpg" alt="Professor José de Assis" class="profile-img">
 
-<body id="index">
-  <!-- Cabeçalho -->
-  <header>
-    <div class="ContainerEx Flex">
-      <div id="logo">
-        <img src="img/logo.png" alt="hal 9000">
-      </div>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check">&#x268c;</label>
-        <ul>
-          <li><a href="index.html" id="m1">Home</a></li>
-          <li><a href="sobre.html" id="m2">Sobre</a></li>
-          <li><a href="cursos.html" id="m3">Cursos</a></li>
-          <li><a href="projetos.html" id="m4">Projetos</a></li>
-          <li><a href="tutoriais.html" id="m5">Tutoriais</a></li>
-          <li><a href="apoio.html" id="m6">Apoio</a></li>
-        </ul>
-      </nav>
+    <h1>Professor José de Assis</h1>
+    <h2><i class="fas fa-link"></i> Hub de Links</h2>
+    
+    <div class="link-tree">
+      <a href="https://devtutorial.com.br/" target="_blank"><i class="fas fa-laptop-code"></i> DEV Tutorial</a>
+      <a href="https://linuxtutorial.com.br/" target="_blank"><i class="fab fa-linux"></i> Linux Tutorial</a>
+      <a href="https://roboticapratica.com.br/" target="_blank"><i class="fas fa-robot"></i> Robótica Prática</a>
+      <a href="https://www.youtube.com/@ProfessorJosedeAssis" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://github.com/professorjosedeassis" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/professorjosedeassis/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.facebook.com/professorjosedeassis" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/prof.joseassis/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://x.com/joseassis" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a>
     </div>
-  </header>
+  </div>
 
-  <!-- Destaque -->
-  <main id="banner">
-    <div class="ContainerEx">
-      <h1>Você faz. Você vê. Você aprende.</h1>
-      <h2>Um site dedicado ao ensino de Programação e Linux.</h2>
-      <a href="cursos.html" class="Botao3">Cursos</a>
-      <a href="projetos.html" class="Botao4">Projetos</a>
-    </div>
-  </main>
-
-  <!-- Introdução -->
-  <section id="intro">
-    <div class="Container Flex2">
-      <div id="destaqueIntro">
-        <img src="img/html5css3.jpg" alt="html5css3">
-      </div>
-      <div id="textoIntro">
-        <h2>Aprender na prática</h2>
-        <p>
-          Turbine seu currículo e crie o seu portfólio com cursos gratuitos, projetos e tutoriais de programação e
-          linux.
-        </p>
-        <div class="TopicosIntro Flex2">
-          <img src="img/laptop.png" alt="laptop">
-          <p>C - Java - JS - Full Stack</p>
-        </div>
-        <div class="TopicosIntro Flex2">
-          <img src="img/tux.png" alt="tux">
-          <p>Linux Server</p>
-        </div>
-        <div class="TopicosIntro Flex2">
-          <img src="img/certificado.png" alt="certificado">
-          <p>Cursos GRÁTIS ( com certificado )</p>
-        </div>
-        <div class="TopicosIntro Flex2">
-          <img src="img/tools.png" alt="ferramentas">
-          <p>Projetos</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projetos -->
-  <section id="projetos">
-    <div class="Container">
-      <h2>
-        Crie seu <span id="projeto">portfólio</span> de projetos
-      </h2>
-      <div class="Cards Flex5">
-        <div class="Card">
-          <img src="img/carometro.png" alt="java mysql">
-          <h3>Carômetro</h3>
-          <p>
-            Carômetro é um aplicativo para desktop (Windows, Linux ou MAC) de repositório de informações de pessoas com
-            uma foto associada.
-          </p>
-          <a href="projeto/carometro.html" class="Botao3">Saiba +</a>
-        </div>
-        <div class="Card">
-          <img src="img/sistemaos.png" alt="sistema java mysql">
-          <h3>Sistema OS</h3>
-          <p>
-            Neste projeto você irá desenvolver passo a passo do zero um
-            sistema para gestão de serviços usando o Java e o banco de dados
-            MySQL.
-          </p>
-          <a href="projeto/javamysql.html" class="Botao3">Saiba +</a>
-        </div>
-        <div class="Card">
-          <img src="img/javacep.png" alt="projeto java cep">
-          <h3>Busca automática de CEP</h3>
-          <p>
-            Mini projeto que ensina a fazer a busca automática de um CEP podendo ser usado para agilizar o processo de
-            cadastros em sistemas.
-          </p>
-          <a href="projeto/javacep.html" class="Botao3">Saiba +</a>
-        </div>
-      </div>
-      <div class="Todos">
-        <a href="projetos.html"><span id="corTodos">Conheça todos >></span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cursos -->
-  <section class="Cursos">
-    <div class="Container">
-      <h2>Cursos</h2>
-      <div class="Cards Flex5">
-        <div class="Card">
-          <img src="img/nodejs.png" alt="nodejs">
-          <h3>Desenvolvimento profissional em JavaScript</h3>
-          <p>
-            Curso avançado usando a sintaxe moderna da linguagem e a plataforma Node.js
-          </p>
-          <a href="curso/nodejs.html" class="Botao">Saiba +</a>
-        </div>
-        <div class="Card">
-          <img src="img/java-ee.png" alt="java">
-          <h3>Programação Java para WEB</h3>
-          <p>
-            Este curso é ideal para quem quer dar os primeiros passos no desenvolvimento WEB back-end ou full stack
-            usando a Linguagem Java.
-          </p>
-          <a href="curso/java-ee.html" class="Botao">Saiba +</a>
-        </div>
-        <div class="Card">
-          <img src="img/linux.png" alt="curso de linux">
-          <h3>Linux Server</h3>
-          <p>
-            Curso recomendado aos alunos e profissionais de TI que desejam iniciar em Linux com foco no mercado
-            corporativo e certificação.
-          </p>
-          <a href="curso/linux.html" class="Botao">Saiba +</a>
-        </div>
-      </div>
-      <div class="Todos">
-        <a href="cursos.html">Conheça todos >></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- YouTube -->
-  <section id="youtube">
-    <div class="Container Flex2">
-      <div id="textoYoutube">
-        <h2>Inscreva-se no canal</h2>
-        <p>Acompanhe no <span class="Destacado">YouTube</span> os cursos, tutoriais e projetos que estão em produção.
-          <span class="Destacado">Inscreva-se</span> para não perder as novidades.
-        </p>
-        <a href="https://www.youtube.com/@ProfessorJosedeAssis?sub_confirmation=1" target="_blank"
-          class="Botao2">Inscrever-se</a>
-      </div>
-      <div id="imagemYoutube">
-        <img src="./img/canalyoutube.png" alt="canal youtube">
-      </div>
-    </div>
-  </section>
-
-  <!-- Tutoriais -->
-  <section class="Cursos">
-    <div class="Container">
-      <h2>Tutoriais</h2>
-      <div class="Cards Flex5">
-        <div class="Card">
-          <img src="img/electron.png" alt="electronjs">
-          <h3>Electron tutorial</h3>
-          <p>
-            Explore o framework Electron e crie uma base sólida para o desenvolvimento de projetos inovadores para
-            sistemas desktop.
-          </p>
-          <a href="tutorial/electron.html" class="Botao">Saiba +</a>
-        </div>
-        <div class="Card">
-          <img src="img/html5css3.png" alt="html5 css3">
-          <h3>Site One Page</h3>
-          <p>
-            Desenvolva passo a passo do "zero" até a hospedagem um site one page moderno e responsivo usando apenas
-            HTML5 e CSS3.</p>
-          <a href="tutorial/html5css3.html" class="Botao">Saiba +</a>
-        </div>
-        <div class="Card">
-          <img src="img/mysql.png" alt="mysql linux">
-          <h3>Linux Database Server</h3>
-          <p>
-            Este tutorial ensina a implementar um servidor de banco de dados MySQL baseado no Linux dedicado a sistemas
-            comerciais em redes locais.
-          </p>
-          <a href="tutorial/mysql.html" class="Botao">Saiba +</a>
-        </div>
-      </div>
-      <div class="Todos">
-        <a href="tutoriais.html">Conheça todos >></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="Container Flex4">
-      <div id="copyright">
-        <p>©<span id="copyrightYear"></span> - Professor José de Assis</p>
-      </div>
-      <div id="social">
-        <a href="https://www.youtube.com/c/RoboticapraticaBr" target="_blank"><img src="img/youtube.png"
-            alt="youtube"></a>
-        <a href="https://www.linkedin.com/in/professorjosedeassis" target="_blank"><img src="img/linkedin.png"
-            alt="linkedin"></a>
-        <a href="https://www.facebook.com/professorjosedeassis" target="_blank"><img src="img/facebook.png"
-            alt="facebook"></a>
-        <a href="https://www.instagram.com/prof.joseassis/" target="_blank"><img src="img/instagram.png"
-            alt="instagram"></a>
-        <a href="https://twitter.com/joseassis" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Topo -->
-  <a href="#" id="topo"><img src="img/topo.png" alt="topo do site"></a>
-
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
